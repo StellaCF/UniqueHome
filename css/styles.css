@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+#laptop-nav {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 4rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+}
+#laptop-nav .logo {
+  text-decoration: none;
+  line-height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#laptop-nav .logo i {
+  color: #275d60;
+  font-size: 3.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+#laptop-nav .logo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#laptop-nav .logo div span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #275d60;
+  font-family: "poppins", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  #laptop-nav .logo div span {
+    font-size: 1.5rem;
+  }
+}
+#laptop-nav .logo div strong {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #275d60;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+@media screen and (max-width: 767px) {
+  #laptop-nav .logo div strong {
+    font-size: 1rem;
+  }
+}
+#laptop-nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+#laptop-nav .links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+#laptop-nav .links ul li {
+  font-size: 1.2rem;
+  position: relative;
+  overflow-x: hidden;
+}
+#laptop-nav .links ul li::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #275d60;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+#laptop-nav .links ul li:hover::after {
+  left: 0;
+}
+#laptop-nav .links ul li a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 1024px) {
+  #laptop-nav .links {
+    display: none;
+  }
+}
+#laptop-nav .menubar {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+#laptop-nav .menubar:hover {
+  color: #275d60;
+}
+@media screen and (max-width: 1024px) {
+  #laptop-nav .menubar {
+    display: block;
+  }
+}
+#laptop-nav .button a {
+  text-decoration: none;
+}
+#laptop-nav .button a:first-child {
+  border: none;
+  outline: none;
+  background-color: #275d60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+#laptop-nav .button a:last-child {
+  border: none;
+  outline: none;
+  background-color: #275d60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1024px) {
+  #laptop-nav {
+    padding-inline: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #laptop-nav {
+    padding-inline: 1rem;
+  }
+}
+
+#mobile-nav {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  #mobile-nav {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 50;
+    background-color: #275d60;
+  }
+  #mobile-nav header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem;
+  }
+  #mobile-nav header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    line-height: 1.5em;
+  }
+  #mobile-nav header .logo i {
+    color: white;
+    font-size: 3rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #mobile-nav header .logo div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #mobile-nav header .logo div span {
+    font-size: 1.5rem;
+    font-family: "poppins", sans-serif;
+    color: white;
+  }
+  #mobile-nav header .logo div strong {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: white;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  #mobile-nav header .menubar {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+  #mobile-nav ul {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #mobile-nav ul li {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  #mobile-nav ul li:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+  #mobile-nav ul li a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+  #mobile-nav ul li a:hover {
+    margin-left: 10px;
+  }
+  #mobile-nav .button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: absolute;
+    bottom: 10%;
+  }
+  #mobile-nav .button a:first-child {
+    text-decoration: none;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #275d60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-right: 1rem;
+  }
+  #mobile-nav .button a:last-child {
+    text-decoration: none;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #275d60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+}

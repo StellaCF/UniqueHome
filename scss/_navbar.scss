@@ -1,0 +1,205 @@
+@import"./variables";
+@import"./mediaquery";
+@import"./mixins";
+
+
+// styling laotop navbar
+@mixin LAPTOP-NAV{
+  width:100%;
+  height:90px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-inline:4rem;
+  background-color:$white;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:40;
+  .logo{
+    text-decoration:none;
+    line-height:1.5em;
+    display: flex;
+    i{
+      color: $maincolor;
+      font-size: 3.7rem;
+      align-self: center;
+    }
+    div{
+      display:flex;
+      flex-direction:column;
+      span{
+        font-size:$font3;
+        font-weight:700;
+        color:$maincolor;
+        font-family: "poppins", sans-serif;
+        @include MEDIAQUERY(767px){
+          font-size: $font4;
+        }
+      }
+      strong{
+        font-size: $font5;
+        font-family: sans-serif;
+        color: $maincolor;
+        align-self: flex-end;
+        @include MEDIAQUERY(767px){
+          font-size: $font6;
+        }
+      }
+    }
+    
+  }
+  .links{
+    display: flex;
+    gap: 5rem;
+    ul{
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      li{
+        font-size: $font5;
+        position: relative;
+        overflow-x: hidden;
+        &::after{
+          content:"";
+          width: 100%;
+          height:4px;
+          background-color: $maincolor;
+          position: absolute;
+          bottom: 0;
+          left: -100%;
+          transition: 500ms ease;
+        }
+        &:hover::after{
+          left: 0;
+        }
+        a{
+          text-decoration: none;
+          color: $black;
+        }
+      }
+    }
+    @include MEDIAQUERY(1024px){
+      display: none;
+    }
+  }
+  .menubar{
+    font-size:$font3;
+    cursor:pointer;
+    display:none;
+    &:hover{
+      color:$maincolor;
+    }
+    @include MEDIAQUERY(1024px){
+      display: block;
+    }
+  }
+  .button{
+    a{
+      text-decoration: none;
+      &:first-child{
+        @include BUTTON($white, $maincolor);
+        margin-right: 1rem;
+      }
+      &:last-child{
+        @include BUTTON($white, $maincolor);
+      }
+    }
+  }
+  @include MEDIAQUERY(1024px){
+    padding-inline: 2rem;
+  }
+  @include MEDIAQUERY(767px){
+    padding-inline: 1rem;
+  }
+}
+
+// styling mobile navbar
+@mixin MOBILE-NAV{
+  display: none;
+  @include MEDIAQUERY(1024px){
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 50;
+    background-color: $maincolor;
+    header{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      .logo{
+        display:flex;
+        text-decoration:none;
+        line-height:1.5em;
+        i{
+          color: $white;
+          font-size: 3rem;
+          align-self: center;
+        }
+        div{
+          display:flex;
+          flex-direction:column;
+          span{
+            font-size: $font4;
+            font-family: "poppins", sans-serif;
+            color: $white;
+          }
+          strong{
+            font-size: $font6;
+            font-family: sans-serif;
+            color: $white;
+            align-self: flex-end;
+          }
+        }
+      }
+      .menubar{
+        font-size: $font3;
+        cursor: pointer;
+        color: $white;
+      }
+    }
+    ul{
+      margin-top: 2rem;
+      margin-left: 3rem;
+      display: flex;
+      flex-direction: column;
+      li{
+        list-style: none;
+        font-size: $font5;
+        &:not(:first-child){
+          margin-top: 1.5rem;
+        }
+        a{
+          text-decoration: none;
+          color: $white;
+          transition: 500ms ease;
+          &:hover{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .button{
+      align-self: center;
+      position: absolute;
+      bottom: 10%;
+      a:first-child{
+        text-decoration: none;
+        color: $white;
+        @include BUTTON($white, $maincolor);
+        border: 1px solid $white;
+        margin-right:1rem;
+      }
+      a:last-child{
+        text-decoration: none;
+        color: $white;
+        @include BUTTON($white, $maincolor);
+        border: 1px solid $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import"./variables";
+@import"./base";
+@import"./navbar";
+@import"./mixins";
+@import"./mediaquery";
+@import"./footer";
+
+// navbar styling
+#laptop-nav{
+  @include LAPTOP-NAV;
+}
+
+#mobile-nav{
+  @include MOBILE-NAV;
+}
