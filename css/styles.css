@@ -11,6 +11,7 @@
 body {
   background-color: #fff;
   overflow-x: hidden;
+  font-family: "poppins", sans-serif;
 }
 
 #laptop-nav {
@@ -291,9 +292,9 @@ body {
   }
 }
 
-section {
-  background-image: url(../img/studio-apartment1.jpeg);
-  background-position: bottom;
+.hero {
+  background-image: url(../img/heroimg.jpg);
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 550px;
@@ -301,10 +302,11 @@ section {
   border-radius: 0 0 0 10rem;
   overflow: hidden;
 }
-section div {
+.hero div {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,4 +321,11 @@ section div {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-right: 5rem;
+}
+.hero div h1 {
+  font-size: 3rem;
+  line-height: 1.2em;
+}
+.hero div p {
+  margin-top: 1rem;
 }
