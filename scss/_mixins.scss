@@ -1,6 +1,8 @@
 @import"./mediaquery";
 @import"./variables";
 
+
+// button design
 @mixin BUTTON($bg, $txt){
   border: none;
   outline: none;
@@ -10,6 +12,7 @@
   border-radius: 5px;
 }
 
+// hero section design
 @mixin HERO{
   background-image: url(../img/heroimg.jpg);
   background-position: center;
@@ -29,32 +32,49 @@
     justify-content: center;
     align-items: flex-end;
     padding-right: 5rem;
+    @include MEDIAQUERY(1024px){
+      padding: 0;
+      padding-left: 1rem;
+    }
     h1{
+      width: 60%;
       font-size: 3rem;
       line-height: 1.2em;
+      @include MEDIAQUERY(1024px){
+        width: 100%;
+      }
+      @include MEDIAQUERY(768px){
+        font-size: $font3;
+      }
     }
     p{
       margin-top: 1rem;
+      padding-right: 2rem;
     }
   }
 }
 
+// New Apartments design
 @mixin NEWAPART{
   margin-top: 7rem;
   h2{
     font-size: $font3l;
     color: $maincolor;
     text-align: center;
+    @include MEDIAQUERY(768px){
+      font-size: $font3;
+    }
   }
   main{
     margin-top: 4rem;
     width: 90%;
     margin-inline: auto;
+    // cards design
     .item{
       height: 400px;
-      // box-shadow: 5px 10px 5px rgba($color: #275d60, $alpha: 0.2);
       border: 1px solid $maincolor;
       border-radius: 10px;
+      overflow: hidden;
       :not(:last-of-type){
         margin-right: 1rem;
       }
@@ -65,10 +85,8 @@
       }
       .card{
         padding: 16px 10px;
-        .rating{
-          i{
-            color: $maincolor;
-          }
+        i{
+          color: $maincolor;
         }
         .btn{
           width: 100%;
@@ -92,6 +110,7 @@
       }
     }
   }
+  // view more button
   .more{
     display: flex;
     justify-content: center;
@@ -108,6 +127,23 @@
         background-color: $white;
         color: $maincolor; 
       }
+    }
+  }
+}
+
+// Our benefits
+@mixin BENEFIT{
+  background-color: $maincolor;
+  main{
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+    .text{
+      color: $white;
     }
   }
 }

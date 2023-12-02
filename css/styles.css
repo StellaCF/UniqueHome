@@ -322,12 +322,30 @@ body {
           align-items: flex-end;
   padding-right: 5rem;
 }
+@media screen and (max-width: 1024px) {
+  .hero div {
+    padding: 0;
+    padding-left: 1rem;
+  }
+}
 .hero div h1 {
+  width: 60%;
   font-size: 3rem;
   line-height: 1.2em;
 }
+@media screen and (max-width: 1024px) {
+  .hero div h1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero div h1 {
+    font-size: 2rem;
+  }
+}
 .hero div p {
   margin-top: 1rem;
+  padding-right: 2rem;
 }
 
 .newApartments {
@@ -338,6 +356,11 @@ body {
   color: #275d60;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .newApartments h2 {
+    font-size: 2rem;
+  }
+}
 .newApartments main {
   margin-top: 4rem;
   width: 90%;
@@ -347,6 +370,7 @@ body {
   height: 400px;
   border: 1px solid #275d60;
   border-radius: 10px;
+  overflow: hidden;
 }
 .newApartments main .item :not(:last-of-type) {
   margin-right: 1rem;
@@ -360,7 +384,7 @@ body {
 .newApartments main .item .card {
   padding: 16px 10px;
 }
-.newApartments main .item .card .rating i {
+.newApartments main .item .card i {
   color: #275d60;
 }
 .newApartments main .item .card .btn {
@@ -411,4 +435,22 @@ body {
 .newApartments .more a:hover {
   background-color: white;
   color: #275d60;
+}
+
+.benefit {
+  background-color: #275d60;
+}
+.benefit main {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 9rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-block: 3rem;
+}
+.benefit main .text {
+  color: white;
 }
