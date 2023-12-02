@@ -290,3 +290,9 @@ body {
     border: 1px solid white;
   }
 }
+
+.hero {
+  background-image: url(../img/heroimg.jpg);
+  background-position: center;
+  background-size: cover;
+}

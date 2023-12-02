@@ -9,3 +9,9 @@
   padding: 10px 20px;
   border-radius: 5px;
 }
+
+@mixin HERO{
+  background-image: url(../img/heroimg.jpg);
+  background-position: center;
+  background-size: cover;
+}
