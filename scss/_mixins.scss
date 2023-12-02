@@ -38,3 +38,76 @@
     }
   }
 }
+
+@mixin NEWAPART{
+  margin-top: 7rem;
+  h2{
+    font-size: $font3l;
+    color: $maincolor;
+    text-align: center;
+  }
+  main{
+    margin-top: 4rem;
+    width: 90%;
+    margin-inline: auto;
+    .item{
+      height: 400px;
+      // box-shadow: 5px 10px 5px rgba($color: #275d60, $alpha: 0.2);
+      border: 1px solid $maincolor;
+      border-radius: 10px;
+      :not(:last-of-type){
+        margin-right: 1rem;
+      }
+      img{
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+      }
+      .card{
+        padding: 16px 10px;
+        .rating{
+          i{
+            color: $maincolor;
+          }
+        }
+        .btn{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a{
+            text-decoration: none;
+            background-color: $maincolor;
+            color: $white;
+            padding: 3px 10px;
+            border-radius: 5px;
+            border: 1px solid $maincolor;
+            transition: 500ms ease;;
+            &:hover{
+              background-color: $white;
+              color: $maincolor; 
+            }
+          }
+        }
+      }
+    }
+  }
+  .more{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    a{
+      text-decoration: none;
+      background-color: $maincolor;
+      color: $white;
+      padding: 3px 10px;
+      border-radius: 5px;
+      border: 1px solid $maincolor;
+      transition: 500ms ease;;
+      &:hover{
+        background-color: $white;
+        color: $maincolor; 
+      }
+    }
+  }
+}

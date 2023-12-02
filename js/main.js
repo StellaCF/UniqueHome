@@ -18,7 +18,7 @@ const menuBtn = document.getElementById("show"),
       loop:true,
       margin:10,
       autoplay:true,
-      autoplayTimeout:3000,
+      autoplayTimeout:4000,
       autoplayHoverPause:true
       })
     });
