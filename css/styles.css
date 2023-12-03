@@ -580,17 +580,21 @@ body {
   margin-top: 4rem;
 }
 .testimonial main .item {
+  width: 98%;
   height: 400px;
-  background-color: #275d60;
-  color: white;
+  background-color: white;
+  color: #275d60;
+  margin-bottom: 10px;
   padding: 2rem;
   border-radius: 0 80px 80px 80px;
+  -webkit-box-shadow: 5px 5px 5px rgba(39, 93, 96, 0.3);
+          box-shadow: 5px 5px 5px rgba(39, 93, 96, 0.3);
 }
 .testimonial main .item div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -599,10 +603,65 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .testimonial main .item div strong {
   font-size: 1.5rem;
 }
 .testimonial main .item p {
   margin-top: 2rem;
+}
+
+.newsletter {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  background-color: #275d60;
+  border-radius: 2rem;
+  color: white;
+  padding: 2rem;
+}
+.newsletter h2 {
+  font-size: 2rem;
+}
+.newsletter .form {
+  margin-top: 1rem;
+  width: 60%;
+  background-color: white;
+  border-radius: 20px;
+}
+.newsletter .form input {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: #275d60;
+  font-size: 1.2rem;
+}
+.newsletter .form input::-webkit-input-placeholder {
+  color: #275d60;
+}
+.newsletter .form input::-moz-placeholder {
+  color: #275d60;
+}
+.newsletter .form input:-ms-input-placeholder {
+  color: #275d60;
+}
+.newsletter .form input::-ms-input-placeholder {
+  color: #275d60;
+}
+.newsletter .form input::placeholder {
+  color: #275d60;
+}
+.newsletter .form button {
+  width: 18%;
+  border: none;
+  outline: none;
+  background-color: #275d60;
+  color: white;
+  border-radius: 20px;
+  padding-block: 10px;
+  cursor: pointer;
 }

@@ -246,19 +246,23 @@
   main{
     margin-top: 4rem;
     .item{
+      width: 98%;
       height: 400px;
-      background-color: $maincolor;
-      color: $white;
+      background-color: $white;
+      color: $maincolor;
+      margin-bottom: 10px;
       padding: 2rem;
       border-radius: 0 80px 80px 80px; 
+      box-shadow: 5px 5px 5px rgba($color: $maincolor, $alpha: 0.3);
       div{
         display: flex;
-        gap: 2rem;
+        gap: 1.5rem;
         align-items: center;
         img{
           width: 60px;
           height: 60px;
           border-radius: 50%;
+          object-fit: cover;
         }
         strong{
           font-size: $font4;
@@ -267,6 +271,48 @@
       p{
         margin-top: 2rem;
       }
+    }
+  }
+}
+
+// newsletter styling
+@mixin NEWSLETTER{
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  background-color: $maincolor;
+  border-radius: 2rem;
+  color: $white;
+  padding: 2rem;
+  h2{
+    font-size: $font3;
+  }
+  .form{
+    margin-top: 1rem;
+    width: 60%;
+    background-color: $white;
+    border-radius: 20px;
+    input{
+      width: 80%;
+      padding: 10px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      color: $maincolor;
+      font-size: $font5;
+      &::placeholder{
+        color: $maincolor;
+      }
+    }
+    button{
+      width:18%;
+      border: none;
+      outline: none;
+      background-color: $maincolor;
+      color: $white;
+      border-radius: 20px;
+      padding-block: 10px;
+      cursor: pointer;
     }
   }
 }
