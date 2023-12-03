@@ -443,7 +443,7 @@ body {
 .benefit main {
   width: 90%;
   margin-inline: auto;
-  margin-top: 9rem;
+  margin-top: 7rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2rem 1fr;
@@ -451,6 +451,158 @@ body {
   gap: 2rem;
   padding-block: 3rem;
 }
+.benefit main .imgwrap {
+  height: 500px;
+  border-radius: 0 70px 0 70px;
+  overflow: hidden;
+}
+.benefit main .imgwrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .benefit main .text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: white;
+}
+.benefit main .text h2 {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+}
+@media screen and (max-width: 767px) {
+  .benefit main .text h2 {
+    font-size: 2rem;
+  }
+}
+.benefit main .text p {
+  margin-top: 2rem;
+}
+.benefit main .text p:last-of-type {
+  margin-bottom: 3rem;
+}
+.benefit main .text a {
+  text-decoration: none;
+  background-color: white;
+  color: #275d60;
+  padding: 3px 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+.benefit main .text a:hover {
+  background-color: #275d60;
+  color: white;
+  border: 1px solid white;
+}
+@media screen and (max-width: 767px) {
+  .benefit main {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.steps {
+  margin-top: 7rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.steps h2 {
+  color: #275d60;
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .steps h2 {
+    font-size: 2rem;
+  }
+}
+.steps .services {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .steps .services {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .steps .services {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.steps .services div {
+  height: 250px;
+  padding: 1rem;
+  -webkit-box-shadow: 5px 5px 5px rgba(39, 93, 96, 0.3);
+          box-shadow: 5px 5px 5px rgba(39, 93, 96, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+.steps .services div i {
+  font-size: 2rem;
+  color: #275d60;
+}
+.steps .services div h3 {
+  font-size: 1.5rem;
+  color: #275d60;
+}
+
+.testimonial {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 7rem;
+}
+.testimonial h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #275d60;
+}
+.testimonial main {
+  margin-top: 4rem;
+}
+.testimonial main .item {
+  height: 400px;
+  background-color: #275d60;
+  color: white;
+  padding: 2rem;
+  border-radius: 0 80px 80px 80px;
+}
+.testimonial main .item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonial main .item div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.testimonial main .item div strong {
+  font-size: 1.5rem;
+}
+.testimonial main .item p {
+  margin-top: 2rem;
 }

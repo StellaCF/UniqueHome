@@ -137,13 +137,136 @@
   main{
     width: 90%;
     margin-inline: auto;
-    margin-top: 9rem;
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding-block: 3rem;
+    .imgwrap{
+      height: 500px;
+      border-radius: 0  70px 0 70px;
+      overflow: hidden;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
     .text{
+      align-self: center;
       color: $white;
+      h2{
+        font-size: $font3l;
+        line-height: 1.2em;
+        @include MEDIAQUERY(767px){
+          font-size: $font3;
+        }
+      }
+      p{
+        margin-top: 2rem;
+        &:last-of-type{
+          margin-bottom: 3rem;
+        }
+      }
+      a{
+        text-decoration: none;
+        background-color: $white;
+        color: $maincolor;
+        padding: 3px 10px;
+        border-radius: 10px;
+        border: 1px solid $white;
+        transition: 500ms ease;
+        &:hover{
+          background-color: $maincolor;
+          color: $white; 
+          border: 1px solid $white;
+        }
+      }
+    }
+    @include MEDIAQUERY(767px){
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// our work
+@mixin OURWORK{
+  margin-top: 7rem;
+  width: 90%;
+  margin-inline: auto;
+  h2{
+    color: $maincolor;
+    font-size: $font3l;
+    text-align: center;
+    @include MEDIAQUERY(767px){
+      font-size: $font3;
+    }
+  }
+  .services{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    @include MEDIAQUERY(1024px){
+      grid-template-columns: 1fr 1fr;
+    }
+    @include MEDIAQUERY(767px){
+      grid-template-columns: 1fr;
+    }
+    div{
+      height: 250px;
+      padding: 1rem;
+      box-shadow: 5px 5px 5px rgba($color: $maincolor, $alpha: 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+      i{
+        font-size: $font3;
+        color: $maincolor;
+      }
+      h3{
+        font-size: $font4;
+        color: $maincolor;
+      }
+    }
+  }
+}
+
+// TESTIMONIALS
+@mixin TESTIMONIAL{
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  h2{
+    text-align: center;
+    font-size: $font3l;
+    color: $maincolor;
+  }
+  main{
+    margin-top: 4rem;
+    .item{
+      height: 400px;
+      background-color: $maincolor;
+      color: $white;
+      padding: 2rem;
+      border-radius: 0 80px 80px 80px; 
+      div{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        img{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+        strong{
+          font-size: $font4;
+        }
+      }
+      p{
+        margin-top: 2rem;
+      }
     }
   }
 }
