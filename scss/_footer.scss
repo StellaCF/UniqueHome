@@ -9,40 +9,100 @@
   padding: 4rem;
   .onrow{
     display: flex;
-    justify-content: space-between;
-    .logo{
-      text-decoration:none;
-      line-height:1.5em;
-      display: flex;
-      align-items: center;
-      i{
-        color: $maincolor;
-        font-size: 3.7rem;
-        
-      }
-      div{
-        display:flex;
-        flex-direction:column;
-        span{
-          font-size:$font3;
-          font-weight:700;
-          color:$maincolor;
-          font-family: "poppins", sans-serif;
-          @include MEDIAQUERY(767px){
-            font-size: $font4;
-          }
-        }
-        strong{
-          font-size: $font5;
-          font-family: sans-serif;
+    gap: 5rem;
+    div{
+      .logo{
+        text-decoration:none;
+        line-height:1.5em;
+        display: flex;
+        align-items: center;
+        i{
           color: $maincolor;
-          align-self: flex-end;
-          @include MEDIAQUERY(767px){
-            font-size: $font6;
+          font-size: 3.7rem;
+          
+        }
+        div{
+          display:flex;
+          flex-direction:column;
+          span{
+            font-size:$font3;
+            font-weight:700;
+            color:$maincolor;
+            font-family: "poppins", sans-serif;
+            @include MEDIAQUERY(767px){
+              font-size: $font4;
+            }
           }
+          strong{
+            font-size: $font5;
+            font-family: sans-serif;
+            color: $maincolor;
+            align-self: flex-end;
+            @include MEDIAQUERY(767px){
+              font-size: $font6;
+            }
+          }
+        } 
+      }
+      p{
+        margin-top: 10px;
+      }
+    }
+    .quicklinks{
+      strong{
+        font-size: $font5;
+      }
+      li{
+        list-style: none;
+        &:first-of-type{
+          margin-top: 12px;
+        }
+        a{
+          text-decoration: none;
+          color: $maincolor;
         }
       }
-      
+    }
+    .contact{
+      display: flex;
+      flex-direction: column;
+      strong{
+        font-size: $font5;
+      }
+      small{
+        margin-top: 12px;
+      }
+      a{
+        text-decoration: none;
+        color: $maincolor;
+      }
+    }
+    @include MEDIAQUERY(1024px){
+      flex-wrap: wrap;
+    }
+  }
+  hr{
+    margin-top: 2rem;
+  }
+  .below-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    small{
+      color: $maincolor;
+    }
+    .media{
+      a{
+        text-decoration: none;
+        color: $maincolor;
+        i{
+          font-size: $font4;
+          margin-right: 10px;
+        }
+      }
+    }
+    @include MEDIAQUERY(767px){
+      flex-wrap: wrap-reverse;
     }
   }
 }
