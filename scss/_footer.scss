@@ -1,3 +1,48 @@
 @import"./variables";
 @import"./mixins";
 @import"./mediaquery";
+
+@mixin FOOTER{
+  margin-top: 7rem;
+  background-color: #f3f3f3;
+  color: $maincolor;
+  padding: 4rem;
+  .onrow{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      text-decoration:none;
+      line-height:1.5em;
+      display: flex;
+      align-items: center;
+      i{
+        color: $maincolor;
+        font-size: 3.7rem;
+        
+      }
+      div{
+        display:flex;
+        flex-direction:column;
+        span{
+          font-size:$font3;
+          font-weight:700;
+          color:$maincolor;
+          font-family: "poppins", sans-serif;
+          @include MEDIAQUERY(767px){
+            font-size: $font4;
+          }
+        }
+        strong{
+          font-size: $font5;
+          font-family: sans-serif;
+          color: $maincolor;
+          align-self: flex-end;
+          @include MEDIAQUERY(767px){
+            font-size: $font6;
+          }
+        }
+      }
+      
+    }
+  }
+}

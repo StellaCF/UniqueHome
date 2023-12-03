@@ -5,6 +5,7 @@
 @import"./mixins";
 @import"./mediaquery";
 @import"./base";
+@import"./footer";
 
 #laptop-nav{
   @include LAPTOP-NAV;
@@ -12,4 +13,11 @@
 
 #mobile-nav{
   @include MOBILE-NAV;
+}
+
+
+// footer
+
+.footer{
+  @include FOOTER;
 }
