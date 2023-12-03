@@ -5,6 +5,7 @@
 @import"./mixins";
 @import"./mediaquery";
 @import"./base";
+@import"./footer";
 
 #laptop-nav{
   @include LAPTOP-NAV;
@@ -36,4 +37,11 @@
 
 .newsletter{
   @include NEWSLETTER;
+}
+
+
+// footer
+
+.footer{
+  @include FOOTER;
 }
