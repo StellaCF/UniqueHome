@@ -289,3 +289,406 @@ body {
     border: 1px solid white;
   }
 }
+
+nav .links ul li:nth-child(3) {
+  font-weight: 900;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: black;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  padding: 4rem 4rem;
+}
+@media screen and (max-width: 767px) {
+  section {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 2rem 2rem;
+  }
+}
+
+.welcome {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.welcome h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .welcome h4 {
+    font-size: 1.5rem;
+  }
+}
+.welcome p {
+  font-family: serif;
+  font-size: 1.2rem;
+  padding: 1rem 10rem;
+}
+@media screen and (max-width: 767px) {
+  .welcome p {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .welcome p {
+    padding: 1rem 3rem;
+  }
+}
+
+.why {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.why h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding-bottom: 5rem;
+  text-align: start;
+  color: #275d60;
+}
+@media screen and (max-width: 767px) {
+  .why h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+.why .why-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .why .why-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.why .why-items .why-1 {
+  width: 100%;
+  height: 20rem;
+  background-color: #275d60;
+  padding: 2rem;
+  border-radius: 0 0 0 5rem;
+}
+.why .why-items .why-1 h4 {
+  font-size: 1.7rem;
+  padding-bottom: 1.3rem;
+}
+.why .why-items .why-1 p {
+  font-size: 1.1rem;
+  font-family: serif;
+}
+
+.await {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  justify-content: center;
+}
+.await h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-bottom: 1.5rem;
+  color: #275d60;
+}
+@media screen and (max-width: 767px) {
+  .await h2 {
+    text-align: start;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+.await p {
+  font-family: serif;
+  font-size: 1.2rem;
+  padding: 1rem 10rem;
+}
+@media screen and (max-width: 767px) {
+  .await p {
+    padding: 1rem 0;
+  }
+}
+.await h5 {
+  font-size: 1.5rem;
+  padding-top: 3rem;
+}
+
+.value {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.value h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding-bottom: 5rem;
+  text-align: start;
+  color: #275d60;
+}
+@media screen and (max-width: 767px) {
+  .value h2 {
+    font-size: 2.1rem;
+    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+.value .value-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .value .value-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.value .value-items .value-1 {
+  width: 100%;
+  height: 18rem;
+  background-color: #275d60;
+  padding: 2rem;
+  border-radius: 0 0 0 5rem;
+}
+.value .value-items .value-1 h4 {
+  font-size: 1.7rem;
+  padding-bottom: 1.3rem;
+}
+.value .value-items .value-1 p {
+  font-size: 1.1rem;
+  font-family: serif;
+}
+
+.team {
+  width: 100%;
+  height: auto;
+}
+.team h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  color: #275d60;
+}
+@media screen and (max-width: 767px) {
+  .team h2 {
+    font-size: 2.1rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+.team .team-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .team .team-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.team .team-items .team-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #275d60;
+  border-radius: 0 0 0 5rem;
+}
+@media screen and (max-width: 767px) {
+  .team .team-items .team-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 30rem;
+  }
+}
+.team .team-items .team-1 div img {
+  width: 22rem;
+  border-radius: 0 0 0 5rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .team .team-items .team-1 div img {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: -5rem;
+  }
+}
+.team .team-items .team-1 div h3 {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: white;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .team .team-items .team-1 div h3 {
+    padding-bottom: 2rem;
+  }
+}
+.team .team-items .team-1 div p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: start;
+  padding: 0.5rem 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .team .team-items .team-1 div p {
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+.scrolltop {
+  background-color: #275d60;
+  padding: 12px 12px;
+  width: 3rem;
+  height: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.76rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 4rem;
+  /* position: relative; */
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+}
+@media screen and (max-width: 767px) {
+  .scrolltop {
+    right: 1rem;
+  }
+}
+.scrolltop::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  bottom: -100%;
+  left: 0;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.scrolltop:hover::after {
+  bottom: 0%;
+  background-color: black;
+  border: 0;
+}
