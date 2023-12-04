@@ -14,9 +14,14 @@
   @include MOBILE-NAV;
 }
 
+ HEAD
 nav .links ul li:nth-child(3) {
   font-weight: 900;
+  text-shadow: 1px 1px 1px black;
 }
+
+
+
 
 
 .hero-text h1 {
@@ -338,4 +343,11 @@ section {
   background-color: black;
   border: 0;
 }
+}
+
+
+// footer
+
+.footer{
+  @include FOOTER;
 }

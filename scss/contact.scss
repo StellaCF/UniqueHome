@@ -15,6 +15,7 @@
 }
 
 
+<<<<<<< HEAD
 section {
   padding: 4rem 4rem;
   @include MEDIAQUERY(767px) {
@@ -223,3 +224,11 @@ nav .links ul li:nth-child(5) {
   }
   }
  
+=======
+
+// footer
+
+.footer{
+  @include FOOTER;
+}
+>>>>>>> b539315684dbd3146c203b1bfbc63a9ca3f46029
