@@ -12,6 +12,8 @@
 
 
 // Apartment Page
+
+// heading
 @mixin HEAD{
   margin-top: 90px;
   height: 500px;
@@ -23,7 +25,7 @@
   .overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-color: rgba($color: #000000, $alpha: 0.4);
     color: $white;
     border-radius: 0 0 0 150px;
     display: flex;
@@ -86,6 +88,8 @@
   }
 }
 
+
+// lists of apartments
 @mixin CONTAINER{
   margin-top: 6rem;
   h2{
