@@ -252,12 +252,15 @@
     text-align: center;
     font-size: $font3l;
     color: $maincolor;
+    @include MEDIAQUERY(767px){
+      font-size: $font3;
+    }
   }
   main{
     margin-top: 4rem;
     .item{
       width: 98%;
-      height: 400px;
+      height: 300px;
       background-color: $white;
       color: $maincolor;
       margin-bottom: 10px;
@@ -323,6 +326,9 @@
       border-radius: 20px;
       padding-block: 10px;
       cursor: pointer;
+    }
+    @include MEDIAQUERY(767px){
+      width: 100%;
     }
   }
 }
