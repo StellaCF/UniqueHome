@@ -84,6 +84,9 @@
         object-fit: cover;
       }
       .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 16px 10px;
         i{
           color: $maincolor;
@@ -306,19 +309,19 @@
     background-color: $white;
     border-radius: 20px;
     input{
-      width: 80%;
+      width: 70%;
       padding: 10px;
       outline: none;
       border: none;
       border-radius: 20px;
       color: $maincolor;
-      font-size: $font5;
+      font-size: 0.9rem;
       &::placeholder{
         color: $maincolor;
       }
     }
     button{
-      width:18%;
+      width:28%;
       border: none;
       outline: none;
       background-color: $maincolor;
@@ -327,7 +330,16 @@
       padding-block: 10px;
       cursor: pointer;
     }
-    @include MEDIAQUERY(767px){
+  }
+  @include MEDIAQUERY(767px){
+    width: 100%;
+    padding: 4rem 1rem;
+    border-radius: 0;
+    h2{
+      font-size: $font4;
+      margin-bottom: 1rem;
+    }
+    .form{
       width: 100%;
     }
   }

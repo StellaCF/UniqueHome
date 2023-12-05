@@ -384,6 +384,16 @@ body {
      object-fit: cover;
 }
 .newApartments main .item .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 16px 10px;
 }
 .newApartments main .item .card i {
@@ -649,13 +659,13 @@ body {
   border-radius: 20px;
 }
 .newsletter .form input {
-  width: 80%;
+  width: 70%;
   padding: 10px;
   outline: none;
   border: none;
   border-radius: 20px;
   color: #275d60;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 .newsletter .form input::-webkit-input-placeholder {
   color: #275d60;
@@ -673,7 +683,7 @@ body {
   color: #275d60;
 }
 .newsletter .form button {
-  width: 18%;
+  width: 28%;
   border: none;
   outline: none;
   background-color: #275d60;
@@ -683,6 +693,15 @@ body {
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
+  .newsletter {
+    width: 100%;
+    padding: 4rem 1rem;
+    border-radius: 0;
+  }
+  .newsletter h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
   .newsletter .form {
     width: 100%;
   }
