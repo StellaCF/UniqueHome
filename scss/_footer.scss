@@ -107,7 +107,7 @@
   @include MEDIAQUERY(767px){
     padding-inline: 2rem;
     .onrow{
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
     }
     .below-footer{
       flex-direction: column-reverse;
