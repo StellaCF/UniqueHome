@@ -15,7 +15,7 @@ const menuBtn = document.getElementById("show"),
   $(document).ready(function(){
     $('.carousel2').owlCarousel({
       loop:true,
-      margin:10,
+      margin:30,
       nav:true,
       responsive:{
         0:{

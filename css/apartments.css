@@ -335,11 +335,11 @@ body {
 }
 .header .search {
   position: absolute;
-  bottom: -5%;
+  bottom: -10%;
   left: 25%;
   background-color: white;
-  border-radius: 30px;
-  padding: 10px;
+  border-radius: 60px;
+  padding: 1.5rem 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,13 +349,13 @@ body {
   border-color: #275d60;
   border-radius: 20px 0 0 20px;
   padding: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .header .search .price {
   outline: none;
   border-color: #275d60;
   padding: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .header .search .searchbtn {
   border: none;
@@ -363,13 +363,14 @@ body {
   background-color: #275d60;
   color: white;
   border-radius: 0 20px 20px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .header .search {
-    right: 0;
-    bottom: 2%;
+    right: 1%;
+    bottom: -5%;
+    padding: 1rem;
   }
   .header .search .apartment-type,
   .header .search .price,
@@ -456,7 +457,7 @@ body {
   text-decoration: none;
   background-color: #275d60;
   color: white;
-  padding: 5px 10px;
+  padding: 9px 18px;
   border-radius: 5px;
   border: 1px solid #275d60;
   -webkit-transition: 500ms ease;
