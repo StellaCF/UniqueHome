@@ -293,6 +293,125 @@ body {
   }
 }
 
+.features {
+  margin-top: 9rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.features h2 {
+  font-size: 3rem;
+}
+.features .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+.features .size ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+.features .size ul li {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features .size strong {
+  font-size: 1.5rem;
+}
+.features .size strong small {
+  font-weight: lighter;
+}
+.features .price {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.features .price small {
+  font-weight: lighter;
+}
+
+.location {
+  margin-top: 2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.location h4 {
+  font-size: 1.2rem;
+}
+.location .map {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+.image-features {
+  margin-top: 10rem;
+  width: 90%;
+  margin-inline: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ;
+  grid-template-columns: repeat(1fr, 3);
+  grid-auto-rows: 300px;
+  gap: 1rem;
+}
+.image-features div:first-child {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+.image-features div:nth-child(2) {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+.image-features div:nth-child(3) {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+.image-features div:nth-child(4) {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+.image-features div:nth-child(5) {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+.image-features div:last-child {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+.image-features div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   margin-top: 7rem;
   background-color: #f3f3f3;
