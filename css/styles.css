@@ -656,7 +656,14 @@ body {
   margin-top: 1rem;
   width: 60%;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 40px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .newsletter .form input {
   width: 70%;
