@@ -16,7 +16,7 @@ const menuBtn = document.getElementById("show"),
     $('.carousel1').owlCarousel({
       items:3,
       loop:true,
-      margin:10,
+      margin:30,
       autoplay:true,
       autoplayTimeout:4000,
       autoplayHoverPause:true,
