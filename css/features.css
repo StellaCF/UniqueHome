@@ -34,14 +34,14 @@ body {
 }
 #laptop-nav .logo {
   text-decoration: none;
-  line-height: 1.5em;
+  line-height: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 #laptop-nav .logo i {
   color: #275d60;
-  font-size: 3.7rem;
+  font-size: 2.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -56,14 +56,14 @@ body {
           flex-direction: column;
 }
 #laptop-nav .logo div span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #275d60;
   font-family: "poppins", sans-serif;
 }
 @media screen and (max-width: 767px) {
   #laptop-nav .logo div span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 #laptop-nav .logo div strong {
@@ -92,7 +92,7 @@ body {
   gap: 2rem;
 }
 #laptop-nav .links ul li {
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
   overflow-x: hidden;
 }
@@ -426,7 +426,7 @@ body {
 }
 .footer .onrow div .logo {
   text-decoration: none;
-  line-height: 1.5em;
+  line-height: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,7 +436,7 @@ body {
 }
 .footer .onrow div .logo i {
   color: #275d60;
-  font-size: 3.7rem;
+  font-size: 2.5rem;
 }
 .footer .onrow div .logo div {
   display: -webkit-box;
@@ -448,14 +448,14 @@ body {
           flex-direction: column;
 }
 .footer .onrow div .logo div span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #275d60;
   font-family: "poppins", sans-serif;
 }
 @media screen and (max-width: 767px) {
   .footer .onrow div .logo div span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .footer .onrow div .logo div strong {
@@ -478,6 +478,8 @@ body {
 }
 .footer .onrow .quicklinks li {
   list-style: none;
+  margin-top: 5px;
+  font-size: 1rem;
 }
 .footer .onrow .quicklinks li:first-of-type {
   margin-top: 12px;
@@ -535,8 +537,21 @@ body {
   margin-right: 10px;
 }
 @media screen and (max-width: 767px) {
+  .footer {
+    padding-inline: 2rem;
+  }
+  .footer .onrow {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .footer .below-footer {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
   }
 }
