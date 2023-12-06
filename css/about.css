@@ -422,8 +422,8 @@ body {
     padding-inline: 2rem;
   }
   .footer .onrow {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer .below-footer {
     -webkit-box-orient: vertical;
