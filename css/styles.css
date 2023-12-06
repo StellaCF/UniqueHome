@@ -605,39 +605,57 @@ body {
 }
 .testimonial main {
   margin-top: 4rem;
+  overflow: visible !important;
 }
-.testimonial main .item {
+.testimonial main .items {
   width: 98%;
-  height: 300px;
-  background-color: white;
-  color: #275d60;
-  margin-bottom: 10px;
+  height: 350px;
+  background-color: #275d60;
+  color: white;
+  margin-top: 35px;
   padding: 2rem;
-  border-radius: 0 80px 80px 80px;
-  -webkit-box-shadow: 5px 5px 5px rgba(39, 93, 96, 0.3);
-          box-shadow: 5px 5px 5px rgba(39, 93, 96, 0.3);
-}
-.testimonial main .item div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.testimonial main .item div img {
-  width: 60px;
-  height: 60px;
+.testimonial main .items i {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.testimonial main .items div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  z-index: 10;
+}
+.testimonial main .items div img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.testimonial main .item div strong {
-  font-size: 1.5rem;
-}
-.testimonial main .item p {
+.testimonial main .items p {
   margin-top: 2rem;
+  text-align: center;
+}
+.testimonial main .items strong {
+  font-size: 1rem;
+  text-align: center;
 }
 
 .newsletter {
@@ -698,6 +716,12 @@ body {
   border-radius: 20px;
   padding-block: 10px;
   cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .newsletter {
+    width: 90%;
+    padding-left: 5rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .newsletter {
