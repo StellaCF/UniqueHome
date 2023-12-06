@@ -1,6 +1,8 @@
 @import"./mediaquery";
 @import"./variables";
 
+
+// button design
 @mixin BUTTON($bg, $txt){
   border: none;
   outline: none;
@@ -8,4 +10,360 @@
   color: $bg;
   padding: 10px 20px;
   border-radius: 5px;
+}
+
+// hero section design
+@mixin HERO{
+  background-image: url(../img/heroimg.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  margin-top: 90px;
+  border-radius: 0 0 0 10rem;
+  overflow: hidden;
+  div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 5rem;
+    @include MEDIAQUERY(1024px){
+      padding: 0;
+      padding-left: 1rem;
+    }
+    h1{
+      width: 60%;
+      font-size: 3rem;
+      line-height: 1.2em;
+      @include MEDIAQUERY(1024px){
+        width: 100%;
+      }
+      @include MEDIAQUERY(768px){
+        font-size: $font3;
+      }
+    }
+    p{
+      margin-top: 1rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+// New Apartments design
+@mixin NEWAPART{
+  margin-top: 7rem;
+  h2{
+    font-size: $font3l;
+    color: $maincolor;
+    text-align: center;
+    @include MEDIAQUERY(768px){
+      font-size: $font3;
+    }
+  }
+  main{
+    margin-top: 4rem;
+    width: 90%;
+    margin-inline: auto;
+    // cards design
+    .item{
+      height: 470px;
+      border: 1px solid $maincolor;
+      border-radius: 10px;
+      overflow: hidden;
+      :not(:last-of-type){
+        margin-right: 1rem;
+      }
+      img{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+      .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 10px;
+        i{
+          color: $maincolor;
+        }
+        .btn{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a{
+            text-decoration: none;
+            background-color: $maincolor;
+            color: $white;
+            padding: 8px 18px;
+            border-radius: 5px;
+            border: 1px solid $maincolor;
+            transition: 500ms ease;;
+            &:hover{
+              background-color: $white;
+              color: $maincolor; 
+            }
+          }
+        }
+      }
+      .new{
+        background-color: $maincolor;
+        color: $white;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 10px;
+      }
+    }
+  }
+  // view more button
+  .more{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    a{
+      text-decoration: none;
+      background-color: $maincolor;
+      color: $white;
+      padding: 8px 18px;
+      border-radius: 5px;
+      border: 1px solid $maincolor;
+      transition: 500ms ease;;
+      &:hover{
+        background-color: $white;
+        color: $maincolor; 
+      }
+    }
+  }
+}
+
+// Our benefits
+@mixin BENEFIT{
+  background-color: $maincolor;
+  main{
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+    .imgwrap{
+      height: 500px;
+      border-radius: 0  70px 0 70px;
+      overflow: hidden;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .text{
+      align-self: center;
+      color: $white;
+      h2{
+        font-size: $font3l;
+        line-height: 1.2em;
+        @include MEDIAQUERY(767px){
+          font-size: $font3;
+        }
+      }
+      p{
+        margin-top: 2rem;
+        &:last-of-type{
+          margin-bottom: 3rem;
+        }
+      }
+      a{
+        text-decoration: none;
+        background-color: $white;
+        color: $maincolor;
+        padding: 8px 18px;
+        border-radius: 10px;
+        border: 1px solid $white;
+        transition: 500ms ease;
+        &:hover{
+          background-color: $maincolor;
+          color: $white; 
+          border: 1px solid $white;
+        }
+      }
+    }
+    @include MEDIAQUERY(767px){
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// our work
+@mixin OURWORK{
+  margin-top: 7rem;
+  width: 90%;
+  margin-inline: auto;
+  h2{
+    color: $maincolor;
+    font-size: $font3l;
+    text-align: center;
+    @include MEDIAQUERY(767px){
+      font-size: $font3;
+    }
+  }
+  .services{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    @include MEDIAQUERY(1024px){
+      grid-template-columns: 1fr 1fr;
+    }
+    @include MEDIAQUERY(767px){
+      grid-template-columns: 1fr;
+    }
+    div{
+      height: 250px;
+      padding: 1rem;
+      box-shadow: 5px 5px 25px rgba($color: $maincolor, $alpha: 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+      i{
+        font-size: $font3;
+        color: $maincolor;
+      }
+      h3{
+        font-size: $font4;
+        color: $maincolor;
+      }
+    }
+  }
+}
+
+// TESTIMONIALS
+@mixin TESTIMONIAL{
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  h2{
+    text-align: center;
+    font-size: $font3l;
+    color: $maincolor;
+    @include MEDIAQUERY(767px){
+      font-size: $font3;
+    }
+  }
+  main{
+    margin-top: 4rem;
+    overflow: visible !important;
+    .items{
+      width: 98%;
+      height: 350px;
+      background-color: $maincolor;
+      color: $white;
+      margin-top: 35px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      i{
+        color: $white;
+        font-size: $font3;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+      }
+      div{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 4px solid $white;
+        position: absolute;
+        right: 5%;
+        top: 0%;
+        z-index: 10;
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      p{
+        margin-top: 2rem;
+        text-align: center;
+      }
+      strong{
+        font-size: $font6;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// newsletter styling
+@mixin NEWSLETTER{
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  background-color: $maincolor;
+  border-radius: 2rem;
+  color: $white;
+  padding: 4rem 3rem;
+  h2{
+    font-size: $font3;
+  }
+  .form{
+    margin-top: 1rem;
+    width: 60%;
+    background-color: $white;
+    border-radius: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    input{
+      width: 70%;
+      padding: 10px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      color: $maincolor;
+      font-size: 0.9rem;
+      &::placeholder{
+        color: $maincolor;
+      }
+    }
+    button{
+      width:28%;
+      border: none;
+      outline: none;
+      background-color: $maincolor;
+      color: $white;
+      border-radius: 20px;
+      padding-block: 10px;
+      cursor: pointer;
+    }
+  }
+  @include MEDIAQUERY(1024px){
+    width: 90%;
+    padding-left: 5rem;
+  }
+  @include MEDIAQUERY(767px){
+    width: 100%;
+    padding: 4rem 1rem;
+    border-radius: 0;
+    h2{
+      font-size: $font4;
+      margin-bottom: 1rem;
+    }
+    .form{
+      width: 100%;
+    }
+  }
 }

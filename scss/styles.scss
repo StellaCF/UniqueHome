@@ -15,6 +15,30 @@
   @include MOBILE-NAV;
 }
 
+.hero{
+  @include HERO;
+}
+
+.newApartments{
+  @include NEWAPART;
+}
+
+.benefit{
+  @include BENEFIT;
+}
+
+.steps{
+  @include OURWORK;
+}
+
+.testimonial{
+  @include TESTIMONIAL;
+}
+
+.newsletter{
+  @include NEWSLETTER;
+}
+
 
 // footer
 
