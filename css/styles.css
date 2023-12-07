@@ -295,7 +295,7 @@ body {
 }
 
 .hero {
-  background-image: url(../img/heroimg.jpg);
+  background-image: url(../img/heroimg.webp);
   background-position: center;
   background-size: cover;
   width: 100%;
