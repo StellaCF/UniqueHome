@@ -9,3 +9,15 @@ const menuBtn = document.getElementById("show"),
   closeBtn.addEventListener("click", () => {
     mobileNav.style.right = "-100%";
   })
+
+  // owl carousel3
+  $(document).ready(function(){
+    $('.carousel3').owlCarousel({
+      items:1,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true
+      })
+    })
