@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,21 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
   <!-- owl carousel css files -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper css file -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
+
 <body>
-  
-   <!-- navbar -->
+
+  <!-- navbar -->
 
   <!-- laptop navbar -->
   <nav id="laptop-nav">
@@ -29,7 +39,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="apartments.html">Apartments</a></li>
-        <li><a href="about.html">About Us</a></li>        
+        <li><a href="about.html">About Us</a></li>
         <li><a href="addapartment.html">Sell with us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -44,176 +54,226 @@
   </nav>
 
   <!-- mobile navbar -->
-    <nav id="mobile-nav">
-      <header>
-        <div class="logo">
+  <nav id="mobile-nav">
+    <header>
+      <div class="logo">
+        <i class="ri-home-heart-line"></i>
+        <div>
+          <span>UNIQUE</span>
+          <strong>HOME</strong>
+        </div>
+      </div>
+      <div class="menubar" id="close">
+        <i class="ri-close-fill"></i>
+      </div>
+    </header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="apartments.html">Apartments</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="addapartment.html">Sell with us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="button">
+      <a href="signup.html">Sign up</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+
+  <!-- apartment features -->
+
+  <section class="features">
+    <h2>4 Bedroom Duplex</h2>
+    <div class="price">
+      <strong>
+        &#8358;4,000,000
+      </strong>
+      <small>per year</small>
+    </div>
+    <section class="cta">
+      <!-- features -->
+      <main class="gda">
+        <!-- swiper -->
+  <div style="--swiper-navigation-color: #275d60; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+    <div class="swiper-wrapper swiper1">
+      <div class="swiper-slide">
+        <img src="img/bedroom1.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/bathroom1.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/kitchen1.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/lighting.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/sittingroom1.webp" alt=""/>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/bedroom1.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/bathroom1.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/kitchen1.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/lighting.webp" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/sittingroom1.webp" alt=""/>
+      </div>
+    </div>
+  </div>
+      </main>
+
+      <aside class="properties">
+        <div class="size">
+          <div>
+            <i class="ph ph-house-line"></i>
+            <small>Duplex</small>
+          </div>
+          <div>
+            <i class="ph ph-bathtub"></i>
+            <small>4 bathrooms</small>
+          </div>
+          <div>
+            <i class="ph ph-bed"></i>
+            <small>4 bedrooms</small>
+          </div>
+        </div>
+        <hr>
+        <div class="condition">
+          <div>
+            <small>Condition</small>
+            <span>Newly Built</span>
+          </div>
+          <div>
+            <small>Furnishing</small>
+            <span>Semi-Furnished</span>
+          </div>
+          <div>
+            <small>Property size</small>
+            <span>1900 sqm</span>
+          </div>
+          <div>
+            <small>Propety address</small>
+            <span>No. 7 Don - Ritz Street, Behind Udoka Housing Estate, Awka, Anambra</span>
+          </div>
+        </div>
+        <hr>
+        <ul>
+          <li>24-hour Electricity</li>
+          <li>Chandelier</li>
+          <li>Kitchen Shelf</li>
+          <li>Pre-Paid Meter</li>
+          <li>Wardrobe</li>
+          <li>Balcony</li>
+          <li>Dining Area</li>
+          <li>Kitchen Cabinets</li>
+          <li>Pop Ceiling</li>
+          <li>Tiled Floor</li>
+        </ul>
+      </aside>
+    </section>
+  </section>
+
+
+
+
+
+
+  <!-- location map -->
+  <section class="location">
+    <h4>No. 7 Don - Ritz Street, Behind Udoka Housing Estate, Awka, Anambra.</h4>
+    <main class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.248468487092!2d7.05781453816154!3d6.247355390128011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10438245a233435d%3A0x878469f1590f86cf!2sEzinifite%20Okpuno%20Hall!5e0!3m2!1sen!2sng!4v1701741742418!5m2!1sen!2sng"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+  </section>
+
+
+  <!-- footer -->
+
+  <section class="footer">
+    <main class="onrow">
+      <div>
+        <a href="index.html" class="logo">
           <i class="ri-home-heart-line"></i>
           <div>
             <span>UNIQUE</span>
             <strong>HOME</strong>
           </div>
-        </div>
-        <div class="menubar" id="close">
-          <i class="ri-close-fill"></i>
-        </div>
-      </header>
-      <ul>
+        </a>
+        <p>We Give You Luxury While Saving You <br>
+          The Hassles Of Getting Apartment</p>
+      </div>
+      <ul class="quicklinks">
+        <strong>Quick Links</strong>
         <li><a href="index.html">Home</a></li>
         <li><a href="apartments.html">Apartments</a></li>
-        <li><a href="about.html">About Us</a></li>       
+        <li><a href="about.html">About Us</a></li>
         <li><a href="addapartment.html">Sell with us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-      <div class="button">
-        <a href="signup.html">Sign up</a>
-        <a href="login.html">Login</a>
+      <div class="contact">
+        <strong>Contact</strong>
+        <small>PHONE</small>
+        <a href="#">+234 806 6832 077</a>
+        <a href="#">+234 701 4855 291</a>
+        <small>EMAIL</small>
+        <a href="#">uniquehome@yahoo.com</a>
       </div>
-    </nav>
-  
-
-    <!-- apartment features -->
-
-    <section class="features">
-      <h2>4 Bedroom Duplex</h2>
-      <div class="price">
-        <strong>
-          &#8358;4,000,000
-        </strong>
-        <small>per year</small>
+    </main>
+    <hr>
+    <div class="below-footer">
+      <small>© 2023 UNIQUE HOME. All Rights Reserved.</small>
+      <div class="media">
+        <a href="#">
+          <i class="ri-facebook-circle-line"></i>
+        </a>
+        <a href="#">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="#">
+          <i class="ri-twitter-x-fill"></i>
+        </a>
+        <a href="#">
+          <i class="ri-whatsapp-line"></i>
+        </a>
       </div>
-      <section class="cta">
-        <!-- features -->
-        <div class="gda">
-        <main class="owl-carousel owl-theme carousel3">
-          <div class="item"><h4>1</h4></div>
-          <div class="item"><h4>2</h4></div>
-          <div class="item"><h4>3</h4></div>
-          <div class="item"><h4>4</h4></div>
-          <div class="item"><h4>5</h4></div>
-          <div class="item"><h4>6</h4></div>
-        </main>
-      </div>
-
-        <aside class="properties">
-          <div class="size">
-            <div>
-              <i class="ph ph-house-line"></i>
-              <small>Duplex</small>
-            </div>
-            <div>
-              <i class="ph ph-bathtub"></i>
-              <small>4 bathrooms</small>
-            </div>
-            <div>
-              <i class="ph ph-bed"></i>
-              <small>4 bedrooms</small>
-            </div>
-          </div>
-          <hr>
-          <div class="condition">
-            <div>
-              <small>Condition</small>
-              <span>Newly Built</span>
-            </div>
-            <div>
-              <small>Furnishing</small>
-              <span>Semi-Furnished</span>
-            </div>
-            <div>
-              <small>Property size</small>
-              <span>1900 sqm</span>
-            </div>
-            <div>
-              <small>Propety address</small>
-              <span>No. 7 Don - Ritz Street, Behind Udoka Housing Estate, Awka, Anambra</span>
-            </div>
-          </div>
-          <hr>
-          <ul>
-            <li>24-hour Electricity</li>
-            <li>Chandelier</li>
-            <li>Kitchen Shelf</li>
-            <li>Pre-Paid Meter</li>
-            <li>Wardrobe</li>
-            <li>Balcony</li>
-            <li>Dining Area</li>
-            <li>Kitchen Cabinets</li>
-            <li>Pop Ceiling</li>
-            <li>Tiled Floor</li>
-          </ul>
-        </aside>
-      </section>
-    </section>
-
-    <!-- location map -->
-    <section class="location">
-      <h4>No. 7 Don - Ritz Street, Behind Udoka Housing Estate, Awka, Anambra.</h4>
-      <main class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.248468487092!2d7.05781453816154!3d6.247355390128011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10438245a233435d%3A0x878469f1590f86cf!2sEzinifite%20Okpuno%20Hall!5e0!3m2!1sen!2sng!4v1701741742418!5m2!1sen!2sng" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </main>
-    </section>
-
-
-    <!-- footer -->
-
-    <section class="footer">
-      <main class="onrow">
-        <div>
-          <a href="index.html" class="logo">
-            <i class="ri-home-heart-line"></i>
-            <div>
-              <span>UNIQUE</span>
-              <strong>HOME</strong>
-            </div>
-          </a>
-          <p>We Give You Luxury  While Saving You <br>
-            The Hassles Of Getting Apartment</p>
-        </div>
-        <ul class="quicklinks">
-          <strong>Quick Links</strong>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="apartments.html">Apartments</a></li>
-          <li><a href="about.html">About Us</a></li>       
-          <li><a href="addapartment.html">Sell with us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="contact">
-          <strong>Contact</strong>
-          <small>PHONE</small>
-          <a href="#">+234 806 6832 077</a>
-          <a href="#">+234 701 4855 291</a>
-          <small>EMAIL</small>
-          <a href="#">uniquehome@yahoo.com</a>
-        </div>
-      </main>
-      <hr>
-      <div class="below-footer">
-        <small>© 2023 UNIQUE HOME. All Rights Reserved.</small>
-        <div class="media">
-          <a href="#">
-            <i class="ri-facebook-circle-line"></i>
-          </a>
-          <a href="#">
-            <i class="ri-instagram-line"></i>
-          </a>
-          <a href="#">
-            <i class="ri-twitter-x-fill"></i>
-          </a>
-          <a href="#">
-            <i class="ri-whatsapp-line"></i>
-          </a>
-        </div>
-      </div>
-     </section>
+    </div>
+  </section>
 
 
 
-       <!-- jquery file -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- jquery file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- owl carousel js file -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="js/main.js"></script>
+    <!-- swiper js file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
