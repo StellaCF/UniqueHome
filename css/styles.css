@@ -294,6 +294,450 @@ body {
   }
 }
 
+.hero {
+  background-image: url(../img/heroimg.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  margin-top: 90px;
+  border-radius: 0 0 0 10rem;
+  overflow: hidden;
+}
+.hero div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 5rem;
+}
+@media screen and (max-width: 1024px) {
+  .hero div {
+    padding: 0;
+    padding-left: 1rem;
+  }
+}
+.hero div h1 {
+  width: 60%;
+  font-size: 3rem;
+  line-height: 1.2em;
+}
+@media screen and (max-width: 1024px) {
+  .hero div h1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero div h1 {
+    font-size: 2rem;
+  }
+}
+.hero div p {
+  margin-top: 1rem;
+  padding-right: 2rem;
+}
+
+.newApartments {
+  margin-top: 7rem;
+}
+.newApartments h2 {
+  font-size: 2.5rem;
+  color: #275d60;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .newApartments h2 {
+    font-size: 2rem;
+  }
+}
+.newApartments main {
+  margin-top: 4rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.newApartments main .item {
+  height: 470px;
+  border: 1px solid #275d60;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.newApartments main .item :not(:last-of-type) {
+  margin-right: 1rem;
+}
+.newApartments main .item img {
+  width: 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newApartments main .item .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 10px;
+}
+.newApartments main .item .card i {
+  color: #275d60;
+}
+.newApartments main .item .card .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.newApartments main .item .card .btn a {
+  text-decoration: none;
+  background-color: #275d60;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  border: 1px solid #275d60;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+.newApartments main .item .card .btn a:hover {
+  background-color: white;
+  color: #275d60;
+}
+.newApartments main .item .new {
+  background-color: #275d60;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.newApartments .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+.newApartments .more a {
+  text-decoration: none;
+  background-color: #275d60;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  border: 1px solid #275d60;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+.newApartments .more a:hover {
+  background-color: white;
+  color: #275d60;
+}
+
+.benefit {
+  background-color: #275d60;
+}
+.benefit main {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-block: 3rem;
+}
+.benefit main .imgwrap {
+  height: 500px;
+  border-radius: 0 70px 0 70px;
+  overflow: hidden;
+}
+.benefit main .imgwrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.benefit main .text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+}
+.benefit main .text h2 {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+}
+@media screen and (max-width: 767px) {
+  .benefit main .text h2 {
+    font-size: 2rem;
+  }
+}
+.benefit main .text p {
+  margin-top: 2rem;
+}
+.benefit main .text p:last-of-type {
+  margin-bottom: 3rem;
+}
+.benefit main .text a {
+  text-decoration: none;
+  background-color: white;
+  color: #275d60;
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 1px solid white;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+.benefit main .text a:hover {
+  background-color: #275d60;
+  color: white;
+  border: 1px solid white;
+}
+@media screen and (max-width: 767px) {
+  .benefit main {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.steps {
+  margin-top: 7rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.steps h2 {
+  color: #275d60;
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .steps h2 {
+    font-size: 2rem;
+  }
+}
+.steps .services {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .steps .services {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .steps .services {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.steps .services div {
+  height: 250px;
+  padding: 1rem;
+  -webkit-box-shadow: 5px 5px 25px rgba(39, 93, 96, 0.3);
+          box-shadow: 5px 5px 25px rgba(39, 93, 96, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+.steps .services div i {
+  font-size: 2rem;
+  color: #275d60;
+}
+.steps .services div h3 {
+  font-size: 1.5rem;
+  color: #275d60;
+}
+
+.testimonial {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 7rem;
+}
+.testimonial h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #275d60;
+}
+@media screen and (max-width: 767px) {
+  .testimonial h2 {
+    font-size: 2rem;
+  }
+}
+.testimonial main {
+  margin-top: 4rem;
+  overflow: visible !important;
+}
+.testimonial main .items {
+  width: 98%;
+  height: 350px;
+  background-color: #275d60;
+  color: white;
+  margin-top: 35px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.testimonial main .items i {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.testimonial main .items div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  z-index: 10;
+}
+.testimonial main .items div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonial main .items p {
+  margin-top: 2rem;
+  text-align: center;
+}
+.testimonial main .items strong {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.newsletter {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  background-color: #275d60;
+  border-radius: 2rem;
+  color: white;
+  padding: 4rem 3rem;
+}
+.newsletter h2 {
+  font-size: 2rem;
+}
+.newsletter .form {
+  margin-top: 1rem;
+  width: 60%;
+  background-color: white;
+  border-radius: 40px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.newsletter .form input {
+  width: 70%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: #275d60;
+  font-size: 0.9rem;
+}
+.newsletter .form input::-webkit-input-placeholder {
+  color: #275d60;
+}
+.newsletter .form input::-moz-placeholder {
+  color: #275d60;
+}
+.newsletter .form input:-ms-input-placeholder {
+  color: #275d60;
+}
+.newsletter .form input::-ms-input-placeholder {
+  color: #275d60;
+}
+.newsletter .form input::placeholder {
+  color: #275d60;
+}
+.newsletter .form button {
+  width: 28%;
+  border: none;
+  outline: none;
+  background-color: #275d60;
+  color: white;
+  border-radius: 20px;
+  padding-block: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .newsletter {
+    width: 90%;
+    padding-left: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .newsletter {
+    width: 100%;
+    padding: 4rem 1rem;
+    border-radius: 0;
+  }
+  .newsletter h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .newsletter .form {
+    width: 100%;
+  }
+}
+
 .footer {
   margin-top: 7rem;
   background-color: #f3f3f3;
