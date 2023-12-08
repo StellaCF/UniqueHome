@@ -14,69 +14,72 @@
   @include MOBILE-NAV;
 }
 
- HEAD
-nav .links ul li:nth-child(3) {
-  font-weight: 900;
-  text-shadow: 1px 1px 1px black;
-}
 
-
-
-
-
-.hero-text h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: sans-serif;
-  color: black;
-  padding-top: 10rem;
-  padding-bottom: 2rem;
-  // padding: 5rem;
-  text-align: center;
-  align-items: center;
-}
-
-
-section {
-  padding: 4rem 4rem;
-  @include MEDIAQUERY(767px) {
-    padding: 2rem 1rem;
-  }
-  @include MEDIAQUERY(1024px) {
-    padding: 2rem 2rem;
-  }
-}
 
 
 .welcome {
-  // padding: 4rem 7rem;
-  align-items: center;
-  text-align: center;
+  width: 100%;
+  height: 30rem;
   justify-content: center;
-  h4 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    padding-bottom: 1.5rem;
-    @include MEDIAQUERY(767px) {
-      font-size: 1.5rem;
-    }
+  margin-top: 5rem;
+  overflow: hidden;
+  position: relative;
+  .imgwrap {
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
   }
-  p {
-    font-family: serif;
-    font-size: 1.2rem;
-    padding: 1rem 10rem;
+  }
+  .text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 4rem 4rem;
+    background-color: rgba(13, 13, 13, 0.8);
     @include MEDIAQUERY(767px) {
-    font-size: 1.1rem;
-    padding: 1rem 0;
+      padding: 1rem 1rem;
     }
-    @include MEDIAQUERY(1024px) {
-      padding: 1rem 3rem;
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: sans-serif;
+        text-align: center;
+        align-items: center;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        // padding-top: 4rem;/
+        @include MEDIAQUERY(767px) {
+          font-size: 3rem;
+          font-weight: 800;
+        }
+      }
+    h4 {
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      padding-top: 1.5rem;
+      @include MEDIAQUERY(767px) {
+        padding: 1rem 1rem;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      text-align: center;
+      color: white;
+      padding: 1rem 10rem 3rem 10rem;
+      @include MEDIAQUERY(767px) {
+        padding: 0 0;
+      }
     }
   }
 }
-
-
 
 
 
@@ -85,6 +88,11 @@ section {
   justify-content: center;
   width: 100%;
   height: auto;
+  padding: 4rem 4rem;
+  // background-color: rgba(13, 13, 13, 0.9);
+  @include MEDIAQUERY(767px) {
+    padding: 1rem 1rem;
+  }
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -131,25 +139,37 @@ section {
 
 
 
-
-
-
-
-
-
-
-
 .await {
-  // padding: 4rem 7rem;
   align-items: center; 
   width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  justify-content: center;
-  h2 {
-    font-size: 2.5rem;
+  height: 27rem;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(13, 13, 13, 0.8);
+    .imgwrap {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0;
+      }
+      }
+    
+    .text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 4rem 4rem;
+    background-color: rgba(13, 13, 13, 0.7);
+    @include MEDIAQUERY(767px) {
+      padding: 1rem 1rem;
+    }
+    h2 {
+    font-size: 2rem;
     font-weight: 600;
     font-family: sans-serif;
     padding-bottom: 1.5rem;
@@ -164,6 +184,8 @@ section {
     font-family: serif;
     font-size: 1.2rem;
     padding: 1rem 10rem;
+    text-align: center;
+    color: white;
     @include MEDIAQUERY(767px) {
       padding: 1rem 0;
     }
@@ -171,7 +193,11 @@ section {
   h5 {
     font-size: 1.5rem;
     padding-top: 3rem;
+    text-align: center;
+    color: white;
   }
+    }
+
 }
 
 
@@ -181,6 +207,11 @@ section {
   justify-content: center;
   width: 100%;
   height: auto;
+  padding: 4rem 4rem;
+  // background-color: rgba(13, 13, 13, 0.7);
+  @include MEDIAQUERY(767px) {
+    padding: 1rem 1rem;
+  }
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
