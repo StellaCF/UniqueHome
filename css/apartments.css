@@ -34,14 +34,14 @@ body {
 }
 #laptop-nav .logo {
   text-decoration: none;
-  line-height: 1.5em;
+  line-height: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 #laptop-nav .logo i {
   color: #275d60;
-  font-size: 3.7rem;
+  font-size: 2.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -56,14 +56,14 @@ body {
           flex-direction: column;
 }
 #laptop-nav .logo div span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #275d60;
   font-family: "poppins", sans-serif;
 }
 @media screen and (max-width: 767px) {
   #laptop-nav .logo div span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 #laptop-nav .logo div strong {
@@ -92,7 +92,7 @@ body {
   gap: 2rem;
 }
 #laptop-nav .links ul li {
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
   overflow-x: hidden;
 }
@@ -293,6 +293,181 @@ body {
   }
 }
 
+.header {
+  margin-top: 90px;
+  height: 500px;
+  background-image: url(../img/5bdr3.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0 150px;
+  position: relative;
+}
+.header .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 0 0 0 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .overlay h1 {
+  font-size: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .header .overlay h1 {
+    font-size: 2rem;
+  }
+  .header .overlay p {
+    padding-inline: 10px;
+  }
+}
+.header .search {
+  position: absolute;
+  bottom: -10%;
+  left: 25%;
+  background-color: white;
+  border-radius: 60px;
+  padding: 1.5rem 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .search .apartment-type {
+  outline: none;
+  border-color: #275d60;
+  border-radius: 20px 0 0 20px;
+  padding: 5px;
+  font-size: 1rem;
+}
+.header .search .price {
+  outline: none;
+  border-color: #275d60;
+  padding: 5px;
+  font-size: 1rem;
+}
+.header .search .searchbtn {
+  border: none;
+  padding: 7px 12px;
+  background-color: #275d60;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .header .search {
+    right: 1%;
+    bottom: -5%;
+    padding: 1rem;
+  }
+  .header .search .apartment-type,
+  .header .search .price,
+  .header .search .searchbtn {
+    font-size: 15px;
+    width: 100px;
+    padding: 5px 2px;
+  }
+}
+
+.apartment-list {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 10rem;
+}
+.apartment-list .container {
+  margin-top: 6rem;
+}
+.apartment-list .container h2 {
+  font-size: 2rem;
+  color: #275d60;
+  margin-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  .apartment-list .container h2 {
+    font-size: 1.5rem;
+  }
+}
+.apartment-list .container .carousel2 {
+  margin-top: 2rem;
+}
+.apartment-list .container .carousel2 .item {
+  height: 450px;
+  border: 1px solid #275d60;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.apartment-list .container .carousel2 .item .img-wrap {
+  width: 100%;
+  height: 300px;
+}
+.apartment-list .container .carousel2 .item .img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.apartment-list .container .carousel2 .item .details {
+  height: 150px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.apartment-list .container .carousel2 .item .details i {
+  color: #275d60;
+  font-size: 1.2rem;
+}
+.apartment-list .container .carousel2 .item .details .location {
+  font-size: 1rem;
+}
+.apartment-list .container .carousel2 .item .details .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.apartment-list .container .carousel2 .item .details .others .price {
+  font-size: 1.2rem;
+}
+.apartment-list .container .carousel2 .item .details .others a {
+  text-decoration: none;
+  background-color: #275d60;
+  color: white;
+  padding: 9px 18px;
+  border-radius: 5px;
+  border: 1px solid #275d60;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+.apartment-list .container .carousel2 .item .details .others a:hover {
+  background-color: white;
+  color: #275d60;
+}
+
 .footer {
   margin-top: 7rem;
   background-color: #f3f3f3;
@@ -307,7 +482,7 @@ body {
 }
 .footer .onrow div .logo {
   text-decoration: none;
-  line-height: 1.5em;
+  line-height: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,7 +492,7 @@ body {
 }
 .footer .onrow div .logo i {
   color: #275d60;
-  font-size: 3.7rem;
+  font-size: 2.5rem;
 }
 .footer .onrow div .logo div {
   display: -webkit-box;
@@ -329,14 +504,14 @@ body {
           flex-direction: column;
 }
 .footer .onrow div .logo div span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #275d60;
   font-family: "poppins", sans-serif;
 }
 @media screen and (max-width: 767px) {
   .footer .onrow div .logo div span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .footer .onrow div .logo div strong {
@@ -359,6 +534,8 @@ body {
 }
 .footer .onrow .quicklinks li {
   list-style: none;
+  margin-top: 5px;
+  font-size: 1rem;
 }
 .footer .onrow .quicklinks li:first-of-type {
   margin-top: 12px;
@@ -416,8 +593,21 @@ body {
   margin-right: 10px;
 }
 @media screen and (max-width: 767px) {
+  .footer {
+    padding-inline: 2rem;
+  }
+  .footer .onrow {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .footer .below-footer {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
   }
 }
