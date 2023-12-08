@@ -295,7 +295,7 @@ body {
 }
 
 .hero {
-  background-image: url(../img/heroimg.webp);
+  background-image: url(../img/heroimg.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -394,9 +394,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
-.newApartments main .item .card i {
+.newApartments main .item .card .location {
+  font-size: 1rem;
+}
+.newApartments main .item .card .location i {
+  color: #275d60;
+}
+.newApartments main .item .card .rating {
   color: #275d60;
 }
 .newApartments main .item .card .btn {
@@ -407,14 +413,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .newApartments main .item .card .btn a {
   text-decoration: none;
   background-color: #275d60;
   color: white;
+  font-size: 1rem;
   padding: 8px 18px;
   border-radius: 5px;
   border: 1px solid #275d60;
@@ -431,7 +438,7 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-radius: 5px;
   font-size: 10px;
 }

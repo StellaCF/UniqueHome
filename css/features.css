@@ -293,6 +293,215 @@ body {
   }
 }
 
+.features {
+  margin-top: 9rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.features h2 {
+  font-size: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .features h2 {
+    font-size: 2rem;
+  }
+}
+.features .price {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.features .cta {
+  width: 100%;
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1rem 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .features .cta {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}
+.features .cta .gda {
+  width: 100% !important;
+  height: 600px;
+  overflow-x: hidden;
+}
+.features .cta .gda .swiper {
+  width: 100%;
+  height: 100%;
+}
+.features .cta .gda .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features .cta .gda .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.features .cta .gda .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features .cta .gda .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.features .cta .gda .mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+.features .cta .gda .mySwiper {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+.features .cta .gda .mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.8;
+}
+.features .cta .gda .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.features .cta .gda .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.features .cta .properties {
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 20px rgba(39, 93, 96, 0.2);
+          box-shadow: 10px 10px 20px rgba(39, 93, 96, 0.2);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.features .cta .properties .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.features .cta .properties .size > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+.features .cta .properties .size > div i {
+  color: #275d60;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: 1px solid #275d60;
+  border-radius: 50%;
+}
+.features .cta .properties .condition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+.features .cta .properties .condition > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+.features .cta .properties .condition > div > small {
+  color: #275d60;
+}
+.features .cta .properties .condition > div > span {
+  font-size: 1rem;
+}
+.features .cta .properties ul {
+  list-style: inside;
+  list-style-type: circle;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  font-size: 1rem;
+}
+.features .cta .properties .payRent {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.features .cta .properties .payRent a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #275d60;
+  color: white;
+}
+
+.location {
+  margin-top: 5rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.location h4 {
+  font-size: 1rem;
+  color: #275d60;
+}
+.location .map {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+}
+
 .footer {
   margin-top: 7rem;
   background-color: #f3f3f3;

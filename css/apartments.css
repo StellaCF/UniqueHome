@@ -359,7 +359,7 @@ body {
 }
 .header .search .searchbtn {
   border: none;
-  padding: 7px 10px;
+  padding: 7px 12px;
   background-color: #275d60;
   color: white;
   border-radius: 0 20px 20px 0;
@@ -437,7 +437,7 @@ body {
   font-size: 1.2rem;
 }
 .apartment-list .container .carousel2 .item .details .location {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .apartment-list .container .carousel2 .item .details .others {
   display: -webkit-box;
