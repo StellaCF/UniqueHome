@@ -385,6 +385,7 @@ body {
      object-fit: cover;
 }
 .newApartments main .item .card {
+  height: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,16 +396,26 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
+}
+.newApartments main .item .card i {
+  color: #275d60;
 }
 .newApartments main .item .card .location {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
-.newApartments main .item .card .location i {
-  color: #275d60;
+.newApartments main .item .card .priceWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.newApartments main .item .card .rating {
-  color: #275d60;
+.newApartments main .item .card .priceWrap p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .newApartments main .item .card .btn {
   width: 100%;

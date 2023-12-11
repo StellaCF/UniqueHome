@@ -337,7 +337,7 @@ body {
 .header .search {
   position: absolute;
   bottom: -10%;
-  left: 25%;
+  left: 28%;
   background-color: white;
   border-radius: 60px;
   padding: 1.5rem 1.2rem;
@@ -404,7 +404,7 @@ body {
   margin-top: 2rem;
 }
 .apartment-list .container .carousel2 .item {
-  height: 450px;
+  height: 470px;
   border: 1px solid #275d60;
   border-radius: 10px;
   overflow: hidden;
@@ -420,7 +420,7 @@ body {
      object-fit: cover;
 }
 .apartment-list .container .carousel2 .item .details {
-  height: 150px;
+  height: 170px;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,7 +438,15 @@ body {
   font-size: 1.2rem;
 }
 .apartment-list .container .carousel2 .item .details .location {
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+.apartment-list .container .carousel2 .item .details .priceWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .apartment-list .container .carousel2 .item .details .others {
   display: -webkit-box;
@@ -458,7 +466,7 @@ body {
   text-decoration: none;
   background-color: #275d60;
   color: white;
-  padding: 9px 18px;
+  padding: 8px 18px;
   border-radius: 5px;
   border: 1px solid #275d60;
   -webkit-transition: 500ms ease;
