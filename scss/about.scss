@@ -19,7 +19,7 @@
 
 .welcome {
   width: 100%;
-  height: 30rem;
+  height: 32rem;
   justify-content: center;
   margin-top: 5rem;
   overflow: hidden;
@@ -45,6 +45,9 @@
     @include MEDIAQUERY(767px) {
       padding: 1rem 1rem;
     }
+    @include MEDIAQUERY(1024px, 768px) {
+      padding: 2rem 2rem;
+    }
     h1 {
         font-size: 3rem;
         font-weight: 600;
@@ -58,6 +61,11 @@
         @include MEDIAQUERY(767px) {
           font-size: 3rem;
           font-weight: 800;
+          padding-bottom: 3rem;
+        }
+        @include MEDIAQUERY(1024px, 768px) {
+          padding-top: 5rem;
+          font-size: 4rem;
         }
       }
     h4 {
@@ -67,6 +75,11 @@
       padding-top: 1.5rem;
       @include MEDIAQUERY(767px) {
         padding: 1rem 1rem;
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+      }
+      @include MEDIAQUERY(1024px, 768px) {
+        padding-bottom: 2.5rem;
       }
     }
     p {
@@ -75,6 +88,10 @@
       color: white;
       padding: 1rem 10rem 3rem 10rem;
       @include MEDIAQUERY(767px) {
+        padding: 0 0;
+        font-size: 1.2rem;
+      }
+      @include MEDIAQUERY(1024px, 768px) {
         padding: 0 0;
       }
     }
@@ -92,6 +109,9 @@
   // background-color: rgba(13, 13, 13, 0.9);
   @include MEDIAQUERY(767px) {
     padding: 1rem 1rem;
+  }
+  @include MEDIAQUERY(1024px, 768px) {
+    padding: 2rem 2rem;
   }
   h2 {
     font-size: 2.5rem;
@@ -118,20 +138,33 @@
       display: flex;
       flex-direction: column;
     }
+    @include MEDIAQUERY(1024px, 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
     .why-1 {
       width: 100%;
       height: 20rem;
       background-color: #275d60;
       padding: 2rem;
       border-radius: 0 0 0 5rem;
+      @include MEDIAQUERY(1024px, 768px) {
+        height: 25rem;
+      }
       h4 {
         font-size: 1.7rem;
         padding-bottom: 1.3rem;
-        // text-align: center;
+        @include MEDIAQUERY(1024px, 768px) {
+          font-size: 2rem;
+        }
       }
       p {
         font-size: 1.1rem;
         font-family: serif;
+        @include MEDIAQUERY(1024px, 768px) {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -142,7 +175,7 @@
 .await {
   align-items: center; 
   width: 100%;
-  height: 27rem;
+  height: 30rem;
   overflow: hidden;
   position: relative;
   background-color: rgba(13, 13, 13, 0.8);
@@ -168,6 +201,9 @@
     @include MEDIAQUERY(767px) {
       padding: 1rem 1rem;
     }
+    @include MEDIAQUERY(1024px, 768px) {
+      padding: 2rem 2rem;
+    }
     h2 {
     font-size: 2rem;
     font-weight: 600;
@@ -179,6 +215,10 @@
       padding-top: 5rem;
       padding-bottom: 3rem;
     }
+    @include MEDIAQUERY(1024px, 768px) {
+      font-size: 2.4rem;
+      padding-top: 1rem;
+    }
   }
   p {
     font-family: serif;
@@ -189,12 +229,20 @@
     @include MEDIAQUERY(767px) {
       padding: 1rem 0;
     }
+    @include MEDIAQUERY(1024px, 768px) {
+      padding: 0 0;
+      font-size: 1.6rem;
+      padding-top: 3rem;
+    }
   }
   h5 {
     font-size: 1.5rem;
     padding-top: 3rem;
     text-align: center;
     color: white;
+    @include MEDIAQUERY(1024px, 768px) {
+      font-size: 1.9rem;
+    }
   }
     }
 
@@ -202,15 +250,19 @@
 
 
 
-.value{
+
+.value {
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
   padding: 4rem 4rem;
-  // background-color: rgba(13, 13, 13, 0.7);
+  // background-color: rgba(13, 13, 13, 0.9);
   @include MEDIAQUERY(767px) {
     padding: 1rem 1rem;
+  }
+  @include MEDIAQUERY(1024px, 768px) {
+    padding: 2rem 2rem;
   }
   h2 {
     font-size: 2.5rem;
@@ -221,7 +273,7 @@
     color: #275d60;
     @include MEDIAQUERY(767px) {
       font-size: 2.1rem;
-      padding: 5rem 0;
+      font-weight: 700;
       padding-top: 5rem;
       padding-bottom: 3rem;
     }
@@ -231,110 +283,44 @@
     align-items: center;
     justify-content: space-between;
     justify-content: center;
-    color: white;
     gap: 2rem;
+    color: white;
     @include MEDIAQUERY(767px) {
+      display: flex;
       flex-direction: column;
+    }
+    @include MEDIAQUERY(1024px, 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
     .value-1 {
       width: 100%;
-      height: 18rem;
+      height: 20rem;
       background-color: #275d60;
       padding: 2rem;
       border-radius: 0 0 0 5rem;
+      @include MEDIAQUERY(1024px, 768px) {
+        height: 25rem;
+      }
       h4 {
         font-size: 1.7rem;
         padding-bottom: 1.3rem;
-        // text-align: center;
+        @include MEDIAQUERY(1024px, 768px) {
+          font-size: 2rem;
+        }
       }
       p {
         font-size: 1.1rem;
         font-family: serif;
-      }
-    }
-  }
-}
-
-
-
-
-.team {
-  width: 100%;
-  height: auto;
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-    color: #275d60;
-    @include MEDIAQUERY(767px) {
-      font-size: 2.1rem;
-      padding-top: 5rem;
-      padding-bottom: 3rem;
-      // padding: 5rem 0;
-    }
-  }
-  .team-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-content: center;
-    gap: 2rem;
-    @include MEDIAQUERY(767px) {
-      flex-direction: column;
-    }
-    .team-1 {
-      display: flex;
-      justify-content: space-between;
-      background-color: #275d60;
-      border-radius: 0 0 0 5rem;
-      @include MEDIAQUERY(767px) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 30rem;
-      }
-      div {
-        // gap: 0.5rem;
-        img {
-          width: 22rem;
-          border-radius: 0 0 0 5rem;
-          height: 100%;
-          object-fit: cover;
-          @include MEDIAQUERY(767px) {
-            width: 100%;
-            height: 15rem;
-            margin-bottom: -5rem;
-          }
-        }
-        h3 {
-          text-align: center;
-          align-items: center;
-          justify-content: center;
-          font-size: 2rem;
-          padding: 2rem 0;
-          color: white;
-          font-family: sans-serif;
-          @include MEDIAQUERY(767px) {
-            padding-bottom: 2rem;
-          }
-        }
-        p {
-          font-size: 1.2rem;
-          color: white;
-          text-align: start;
-          padding: 0.5rem 0.5rem;
-          align-items: center;
-          @include MEDIAQUERY(767px) {
-            padding-bottom: 3rem;
-            font-size: 1.2rem;
-          }
+        @include MEDIAQUERY(1024px, 768px) {
+          font-size: 1.4rem;
         }
       }
     }
   }
 }
+
 
 
 .scrolltop{

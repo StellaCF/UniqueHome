@@ -310,6 +310,11 @@ body {
     height: 80rem;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 {
+    height: 70rem;
+  }
+}
 .contact-2 .imgwrap {
   width: 100%;
   height: 100%;
@@ -368,7 +373,12 @@ body {
 }
 @media screen and (max-width: 767px) {
   .contact-2 .contact-item .paragraph {
-    padding: 0 0;
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .paragraph {
+    padding: 2rem 1rem;
   }
 }
 .contact-2 .contact-item .text {
@@ -396,6 +406,17 @@ body {
             flex-direction: column;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .contact-2 .contact-item .text .item-1 {
   width: 50%;
   height: 100%;
@@ -409,7 +430,12 @@ body {
 @media screen and (max-width: 767px) {
   .contact-2 .contact-item .text .item-1 {
     width: 100%;
-    margin-bottom: -5rem;
+    padding-top: 5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .text .item-1 {
+    width: 100%;
   }
 }
 .contact-2 .contact-item .text .item-1 .location {
@@ -428,6 +454,12 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .text .item-1 .location .img {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 .contact-2 .contact-item .text .item-1 .location .img::after {
   content: "";
@@ -450,16 +482,31 @@ body {
 .contact-2 .contact-item .text .item-1 .location .img img {
   padding: 12px 12px;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .text .item-1 .location .img img {
+    padding: 17px 20px;
+  }
+}
 .contact-2 .contact-item .text .item-1 .location h4 {
   color: #275d60;
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .text .item-1 .location h4 {
+    font-size: 2rem;
+  }
 }
 .contact-2 .contact-item .text .item-1 .location p {
   color: white;
   font-size: 1.2rem;
   padding-bottom: 1rem;
   font-family: serif;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .text .item-1 .location p {
+    font-size: 1.8rem;
+  }
 }
 .contact-2 .contact-item .text .form {
   width: 50%;
@@ -474,6 +521,13 @@ body {
     width: 100%;
     height: 30rem;
     padding: 1rem 1.5rem;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-2 .contact-item .text .form {
+    width: 100%;
+    margin-bottom: 16rem;
   }
 }
 .contact-2 .contact-item .text .form h4 {

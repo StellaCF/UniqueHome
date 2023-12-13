@@ -295,7 +295,7 @@ body {
 
 .welcome {
   width: 100%;
-  height: 30rem;
+  height: 32rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -328,6 +328,11 @@ body {
     padding: 1rem 1rem;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .welcome .text {
+    padding: 2rem 2rem;
+  }
+}
 .welcome .text h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -344,6 +349,13 @@ body {
   .welcome .text h1 {
     font-size: 3rem;
     font-weight: 800;
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .welcome .text h1 {
+    padding-top: 5rem;
+    font-size: 4rem;
   }
 }
 .welcome .text h4 {
@@ -355,6 +367,13 @@ body {
 @media screen and (max-width: 767px) {
   .welcome .text h4 {
     padding: 1rem 1rem;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .welcome .text h4 {
+    padding-bottom: 2.5rem;
   }
 }
 .welcome .text p {
@@ -364,6 +383,12 @@ body {
   padding: 1rem 10rem 3rem 10rem;
 }
 @media screen and (max-width: 767px) {
+  .welcome .text p {
+    padding: 0 0;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .welcome .text p {
     padding: 0 0;
   }
@@ -383,6 +408,11 @@ body {
 @media screen and (max-width: 767px) {
   .why {
     padding: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .why {
+    padding: 2rem 2rem;
   }
 }
 .why h2 {
@@ -428,6 +458,15 @@ body {
             flex-direction: column;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .why .why-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
 .why .why-items .why-1 {
   width: 100%;
   height: 20rem;
@@ -435,13 +474,28 @@ body {
   padding: 2rem;
   border-radius: 0 0 0 5rem;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .why .why-items .why-1 {
+    height: 25rem;
+  }
+}
 .why .why-items .why-1 h4 {
   font-size: 1.7rem;
   padding-bottom: 1.3rem;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .why .why-items .why-1 h4 {
+    font-size: 2rem;
+  }
+}
 .why .why-items .why-1 p {
   font-size: 1.1rem;
   font-family: serif;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .why .why-items .why-1 p {
+    font-size: 1.4rem;
+  }
 }
 
 .await {
@@ -449,7 +503,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 27rem;
+  height: 30rem;
   overflow: hidden;
   position: relative;
   background-color: rgba(13, 13, 13, 0.8);
@@ -479,6 +533,11 @@ body {
     padding: 1rem 1rem;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .await .text {
+    padding: 2rem 2rem;
+  }
+}
 .await .text h2 {
   font-size: 2rem;
   font-weight: 600;
@@ -493,6 +552,12 @@ body {
     padding-bottom: 3rem;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .await .text h2 {
+    font-size: 2.4rem;
+    padding-top: 1rem;
+  }
+}
 .await .text p {
   font-family: serif;
   font-size: 1.2rem;
@@ -505,11 +570,23 @@ body {
     padding: 1rem 0;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .await .text p {
+    padding: 0 0;
+    font-size: 1.6rem;
+    padding-top: 3rem;
+  }
+}
 .await .text h5 {
   font-size: 1.5rem;
   padding-top: 3rem;
   text-align: center;
   color: white;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .await .text h5 {
+    font-size: 1.9rem;
+  }
 }
 
 .value {
@@ -528,6 +605,11 @@ body {
     padding: 1rem 1rem;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .value {
+    padding: 2rem 2rem;
+  }
+}
 .value h2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -539,7 +621,7 @@ body {
 @media screen and (max-width: 767px) {
   .value h2 {
     font-size: 2.1rem;
-    padding: 5rem 0;
+    font-weight: 700;
     padding-top: 5rem;
     padding-bottom: 3rem;
   }
@@ -557,87 +639,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
   gap: 2rem;
+  color: white;
 }
 @media screen and (max-width: 767px) {
   .value .value-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-.value .value-items .value-1 {
-  width: 100%;
-  height: 18rem;
-  background-color: #275d60;
-  padding: 2rem;
-  border-radius: 0 0 0 5rem;
-}
-.value .value-items .value-1 h4 {
-  font-size: 1.7rem;
-  padding-bottom: 1.3rem;
-}
-.value .value-items .value-1 p {
-  font-size: 1.1rem;
-  font-family: serif;
-}
-
-.team {
-  width: 100%;
-  height: auto;
-}
-.team h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  font-family: sans-serif;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  color: #275d60;
-}
-@media screen and (max-width: 767px) {
-  .team h2 {
-    font-size: 2.1rem;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-  }
-}
-.team .team-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 2rem;
-}
-@media screen and (max-width: 767px) {
-  .team .team-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-.team .team-items .team-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #275d60;
-  border-radius: 0 0 0 5rem;
-}
-@media screen and (max-width: 767px) {
-  .team .team-items .team-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -645,55 +651,45 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    height: 30rem;
   }
 }
-.team .team-items .team-1 div img {
-  width: 22rem;
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .value .value-items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+.value .value-items .value-1 {
+  width: 100%;
+  height: 20rem;
+  background-color: #275d60;
+  padding: 2rem;
   border-radius: 0 0 0 5rem;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-@media screen and (max-width: 767px) {
-  .team .team-items .team-1 div img {
-    width: 100%;
-    height: 15rem;
-    margin-bottom: -5rem;
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .value .value-items .value-1 {
+    height: 25rem;
   }
 }
-.team .team-items .team-1 div h3 {
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 2rem;
-  padding: 2rem 0;
-  color: white;
-  font-family: sans-serif;
+.value .value-items .value-1 h4 {
+  font-size: 1.7rem;
+  padding-bottom: 1.3rem;
 }
-@media screen and (max-width: 767px) {
-  .team .team-items .team-1 div h3 {
-    padding-bottom: 2rem;
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .value .value-items .value-1 h4 {
+    font-size: 2rem;
   }
 }
-.team .team-items .team-1 div p {
-  font-size: 1.2rem;
-  color: white;
-  text-align: start;
-  padding: 0.5rem 0.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.value .value-items .value-1 p {
+  font-size: 1.1rem;
+  font-family: serif;
 }
-@media screen and (max-width: 767px) {
-  .team .team-items .team-1 div p {
-    padding-bottom: 3rem;
-    font-size: 1.2rem;
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .value .value-items .value-1 p {
+    font-size: 1.4rem;
   }
 }
 
