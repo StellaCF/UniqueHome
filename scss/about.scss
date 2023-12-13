@@ -24,6 +24,9 @@
   margin-top: 5rem;
   overflow: hidden;
   position: relative;
+  @include MEDIAQUERY(767px) {
+    height: 35rem;
+  }
   .imgwrap {
   width: 100%;
   height: 100%;
@@ -49,9 +52,8 @@
       padding: 2rem 2rem;
     }
     h1 {
-        font-size: 3rem;
-        font-weight: 600;
-        font-family: sans-serif;
+        font-size: 3.3rem;
+        font-weight: 800;
         text-align: center;
         align-items: center;
         color: white;
@@ -75,7 +77,7 @@
       padding-top: 1.5rem;
       @include MEDIAQUERY(767px) {
         padding: 1rem 1rem;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         padding-bottom: 2rem;
       }
       @include MEDIAQUERY(1024px, 768px) {
@@ -83,13 +85,13 @@
       }
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       text-align: center;
       color: white;
       padding: 1rem 10rem 3rem 10rem;
       @include MEDIAQUERY(767px) {
         padding: 0 0;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
       @include MEDIAQUERY(1024px, 768px) {
         padding: 0 0;
@@ -116,7 +118,6 @@
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: sans-serif;
     padding-bottom: 5rem;
     text-align: start;
     color: #275d60;
@@ -150,20 +151,19 @@
       padding: 2rem;
       border-radius: 0 0 0 5rem;
       @include MEDIAQUERY(1024px, 768px) {
-        height: 25rem;
+        height: 28rem;
       }
       h4 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding-bottom: 1.3rem;
         @include MEDIAQUERY(1024px, 768px) {
-          font-size: 2rem;
+          font-size: 1.7rem;
         }
       }
       p {
-        font-size: 1.1rem;
-        font-family: serif;
+        font-size: 0.9rem;
         @include MEDIAQUERY(1024px, 768px) {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -175,10 +175,13 @@
 .await {
   align-items: center; 
   width: 100%;
-  height: 30rem;
+  height: 28rem;
   overflow: hidden;
   position: relative;
   background-color: rgba(13, 13, 13, 0.8);
+  // @include MEDIAQUERY(1024px, 768px) {
+  //   height: 30rem;
+  // }
     .imgwrap {
       width: 100%;
       height: 100%;
@@ -207,13 +210,12 @@
     h2 {
     font-size: 2rem;
     font-weight: 600;
-    font-family: sans-serif;
     padding-bottom: 1.5rem;
     color: #275d60;
     @include MEDIAQUERY(767px) {
       text-align: start;
-      padding-top: 5rem;
-      padding-bottom: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
     }
     @include MEDIAQUERY(1024px, 768px) {
       font-size: 2.4rem;
@@ -221,18 +223,18 @@
     }
   }
   p {
-    font-family: serif;
     font-size: 1.2rem;
     padding: 1rem 10rem;
     text-align: center;
     color: white;
     @include MEDIAQUERY(767px) {
-      padding: 1rem 0;
+      padding: 0.3rem 0;
+      font-size: 1.1rem;
     }
     @include MEDIAQUERY(1024px, 768px) {
       padding: 0 0;
-      font-size: 1.6rem;
-      padding-top: 3rem;
+      font-size: 1.4rem;
+      padding-top: 1.7rem;
     }
   }
   h5 {
@@ -240,8 +242,12 @@
     padding-top: 3rem;
     text-align: center;
     color: white;
+    @include MEDIAQUERY(767px) {
+      padding-top: 2rem;
+      font-size: 1.2rem;
+    }
     @include MEDIAQUERY(1024px, 768px) {
-      font-size: 1.9rem;
+      font-size: 1.7rem;
     }
   }
     }
@@ -267,7 +273,6 @@
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: sans-serif;
     padding-bottom: 5rem;
     text-align: start;
     color: #275d60;
@@ -300,8 +305,11 @@
       background-color: #275d60;
       padding: 2rem;
       border-radius: 0 0 0 5rem;
+      @include MEDIAQUERY(767px) {
+        height: 21rem;
+      }
       @include MEDIAQUERY(1024px, 768px) {
-        height: 25rem;
+        height: 28.5rem;
       }
       h4 {
         font-size: 1.7rem;
@@ -311,10 +319,12 @@
         }
       }
       p {
-        font-size: 1.1rem;
-        font-family: serif;
+        font-size: 0.9rem;
+        @include MEDIAQUERY(767px) {
+          font-size: 1rem;
+        }
         @include MEDIAQUERY(1024px, 768px) {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
       }
     }

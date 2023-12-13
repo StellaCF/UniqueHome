@@ -309,6 +309,11 @@ h1, h2 {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .welcome {
+    height: 35rem;
+  }
+}
 .welcome .imgwrap {
   width: 100%;
   height: 100%;
@@ -340,9 +345,8 @@ h1, h2 {
   }
 }
 .welcome .text h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  font-family: sans-serif;
+  font-size: 3.3rem;
+  font-weight: 800;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -373,7 +377,7 @@ h1, h2 {
 @media screen and (max-width: 767px) {
   .welcome .text h4 {
     padding: 1rem 1rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding-bottom: 2rem;
   }
 }
@@ -383,7 +387,7 @@ h1, h2 {
   }
 }
 .welcome .text p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
   color: white;
   padding: 1rem 10rem 3rem 10rem;
@@ -391,7 +395,7 @@ h1, h2 {
 @media screen and (max-width: 767px) {
   .welcome .text p {
     padding: 0 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -424,7 +428,6 @@ h1, h2 {
 .why h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: sans-serif;
   padding-bottom: 5rem;
   text-align: start;
   color: #275d60;
@@ -482,25 +485,24 @@ h1, h2 {
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .why .why-items .why-1 {
-    height: 25rem;
+    height: 28rem;
   }
 }
 .why .why-items .why-1 h4 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding-bottom: 1.3rem;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .why .why-items .why-1 h4 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .why .why-items .why-1 p {
-  font-size: 1.1rem;
-  font-family: serif;
+  font-size: 0.9rem;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .why .why-items .why-1 p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -509,7 +511,7 @@ h1, h2 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 30rem;
+  height: 28rem;
   overflow: hidden;
   position: relative;
   background-color: rgba(13, 13, 13, 0.8);
@@ -547,15 +549,14 @@ h1, h2 {
 .await .text h2 {
   font-size: 2rem;
   font-weight: 600;
-  font-family: sans-serif;
   padding-bottom: 1.5rem;
   color: #275d60;
 }
 @media screen and (max-width: 767px) {
   .await .text h2 {
     text-align: start;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -565,7 +566,6 @@ h1, h2 {
   }
 }
 .await .text p {
-  font-family: serif;
   font-size: 1.2rem;
   padding: 1rem 10rem;
   text-align: center;
@@ -573,14 +573,15 @@ h1, h2 {
 }
 @media screen and (max-width: 767px) {
   .await .text p {
-    padding: 1rem 0;
+    padding: 0.3rem 0;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .await .text p {
     padding: 0 0;
-    font-size: 1.6rem;
-    padding-top: 3rem;
+    font-size: 1.4rem;
+    padding-top: 1.7rem;
   }
 }
 .await .text h5 {
@@ -589,9 +590,15 @@ h1, h2 {
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 767px) {
+  .await .text h5 {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .await .text h5 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -619,7 +626,6 @@ h1, h2 {
 .value h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: sans-serif;
   padding-bottom: 5rem;
   text-align: start;
   color: #275d60;
@@ -675,9 +681,14 @@ h1, h2 {
   padding: 2rem;
   border-radius: 0 0 0 5rem;
 }
+@media screen and (max-width: 767px) {
+  .value .value-items .value-1 {
+    height: 21rem;
+  }
+}
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .value .value-items .value-1 {
-    height: 25rem;
+    height: 28.5rem;
   }
 }
 .value .value-items .value-1 h4 {
@@ -690,12 +701,16 @@ h1, h2 {
   }
 }
 .value .value-items .value-1 p {
-  font-size: 1.1rem;
-  font-family: serif;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 767px) {
+  .value .value-items .value-1 p {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .value .value-items .value-1 p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
