@@ -6,6 +6,8 @@ body {
     font-family: 'poppins';
 }
 
+
+
 .credit{
   width: 90%;
   margin: 90px auto;
@@ -21,8 +23,7 @@ body {
   .cd__main{
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-  .preload, 
+  } 
   .form-container{
     margin-inline: auto !important;
   }

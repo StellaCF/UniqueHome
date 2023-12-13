@@ -1,10 +1,21 @@
 @import "./base";
+@import "./navbar";
 @import "./variables";
 @import "./mediaquery";
 
+// navbar styling
+#laptop-nav{
+  @include LAPTOP-NAV;
+}
+
+#mobile-nav{
+  @include MOBILE-NAV;
+}
+// navbar styling ends here
+
 .container{
   width: 90%;
-  margin: 90px auto;
+  margin: 100px auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
@@ -98,6 +109,33 @@
       padding-inline: 2rem;
       label{
         font-size: $font6;
+      }
+    }
+  }
+}
+
+.footerContainer{
+  width: 100%;
+  background-color: #f3f3f3;
+  height: 100px;
+  .footer{
+    width: 90%;
+    margin-inline: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    small{
+      color: $maincolor;
+    }
+    .media{
+      a{
+        text-decoration: none;
+        color: $maincolor;
+        i{
+          font-size: $font4;
+          margin-right: 10px;
+        }
       }
     }
   }
