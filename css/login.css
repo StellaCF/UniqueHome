@@ -12,6 +12,11 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   font-family: "poppins", sans-serif;
+  font-weight: 500;
+}
+
+h1, h2 {
+  font-weight: 600;
 }
 
 .background {
@@ -33,7 +38,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .background .overlay form {
   width: 400px;

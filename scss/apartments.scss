@@ -18,7 +18,7 @@
 .header{
   margin-top: 90px;
   height: 500px;
-  background-image: url(../img/5bdr3.webp);
+  background-image: url(https://propertyguru.com.ng/wp-content/uploads/2022/10/IMG-20220902-WA00102-525x328.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0 0 0 150px;
@@ -26,7 +26,7 @@
   .overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.4);
+    background-color: rgba($color: #000000, $alpha: 0.6);
     color: $white;
     border-radius: 0 0 0 150px;
     display: flex;
@@ -36,55 +36,67 @@
     h1{
       font-size: 3rem;
     }
-    @include MEDIAQUERY(767px){
-      h1{
-        font-size: $font3;
-      }
-      p{
-        padding-inline: 10px;
-      }
-    }
   }
   .search{
+    width: 80%;
     position: absolute;
     bottom: -10%;
-    left: 28%;
+    left: 10%;
     background-color: $white;
-    border-radius: 60px;
+    border-radius: 5rem;
     padding: 1.5rem 1.2rem;
     display: flex;
+    justify-content: stretch;
     .apartment-type{
+      width: 40%;
       outline: none;
       border-color: $maincolor;
-      border-radius: 20px 0 0 20px;
-      padding: 5px;
+      border-radius: 2rem 0 0 2rem;
+      padding: 1rem;
       font-size: $font6;
     }
     .price{
+      width: 40%;
       outline: none;
       border-color: $maincolor;
-      padding: 5px;
+      padding: 1rem;
       font-size: $font6;
     }
     .searchbtn{
+      width: 20%;
       border: none;
       padding: 7px 12px;
       background-color: $maincolor;
       color: $white;
-      border-radius: 0 20px 20px 0;
-      font-size: $font6;
+      border-radius: 0 2rem 2rem 0;
+      font-size: $font5;
       cursor: pointer;
     }
-    @include MEDIAQUERY(767px){
-      right: 1%;
-      bottom: -5%;
-      padding: 1rem;
-      .apartment-type,
-      .price,
+  }
+  @include MEDIAQUERY(767px){
+    border-radius: 0;
+    .overlay{
+      border-radius: 0;
+      h1{
+        font-size: $font3;
+      }
+      p{
+        padding-inline: 1rem;
+        text-align: center;
+      }
+    }
+    .search{
+      bottom: -10%;
+      padding: 0.9rem;
+      width: 90%;
+      left: 5%;
+      .apartment-type, 
+      .price{
+        width: 35%;
+        padding: 10px;
+      }
       .searchbtn{
-        font-size: 15px;
-        width:100px;
-        padding: 5px 2px;
+        width: 30%;
       }
     }
   }
