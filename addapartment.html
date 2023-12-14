@@ -24,9 +24,9 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="apartments.html">Apartments</a></li>
-        <li><a href="about.html">About Us</a></li>        
-        <li><a href="addapartment.html">Sell with us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>   
+        <li><a href="contact.html">Contact Us</a></li>     
+        <li><a href="addapartment.html">Add Property</a></li>
       </ul>
       <div class="button">
         <a href="signup.html">Sign up</a>
@@ -56,8 +56,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="apartments.html">Apartments</a></li>
         <li><a href="about.html">About Us</a></li>       
-        <li><a href="addapartment.html">Sell with us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>     
+        <li><a href="addapartment.html">Add Property</a></li>
       </ul>
       <div class="button">
         <a href="signup.html">Sign up</a>
@@ -65,8 +65,99 @@
       </div>
     </nav>
   
-
-
+    <!-- add prperty -->
+    <section class="add-property">
+      <h2>PROPERTY LISTING</h2>
+      <main class="property-form">
+        <h3>General Info</h3>
+       <form action="get" class="gen-info">
+        <div class="cta">
+          <label for="">Property Type</label>
+          <input type="text" required>
+        </div>
+        <div class="short-input">
+          <div class="cta">
+            <label for="">Price (NGN)</label>
+            <input type="number" required>
+          </div>
+          <div class="cta size">
+            <label for="">Property Size</label>
+            <input type="number" required>
+            <span>Sqm</span>
+          </div>
+          <div class="cta">
+            <label for="">Bedroom</label>
+            <input type="number" required>
+          </div>
+          <div class="cta">
+            <label for="">Bathroom</label>
+            <input type="number" required>
+          </div>
+        </div>
+        <div class="cta">
+          <label for="">Property Address</label>
+          <input type="text" required>
+        </div>
+       </form>
+      </main>
+      <hr>
+      <main class="features">
+        <h3>Property Features</h3>
+        <form action="get" class="features-info">
+          <div>
+            <input type="checkbox" required>
+            <label for="">24/7 Electricity</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Kitchen Shelf</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Wardrobe</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Dinning Area</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">POP Ceiling</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Chandelier</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Pre-paid Meter</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Balcony</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Kitchen Cabinets</label>
+          </div>
+          <div>
+            <input type="checkbox" required>
+            <label for="">Tiled Floor</label>
+          </div>
+        </form>
+      </main>
+      <hr>
+      <main class="media">
+        <form action="/upload-image" method="post" enctype="multipart/form-data" class="images">
+          <label for="imageUpload">Add Images</label>
+          <input type="file" id="imageUpload" name="imageUpload" accept="image/*" multiple onchange="previewImages(event)">
+          <div id="imagePreview"></div>
+        </form>
+      </main>
+      <div class="btn">
+        <button type="submit">ADD PROPERTY</button>
+      </div>
+    </section>
 
 
     <!-- footer -->

@@ -57,4 +57,26 @@ $(document).ready(function(){
 });
 
 
+// for image upload
+function previewImages(event) {
+  const preview = document.getElementById('imagePreview');
+  preview.innerHTML = '';
+
+  const files = event.target.files;
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+      const img = new Image();
+      img.src = event.target.result;
+      img.style.width = '150px';
+      img.style.height = '100px';
+      img.style.margin = '10';
+      preview.appendChild(img);
+    };
+
+    reader.readAsDataURL(file);
+  };
+};
 

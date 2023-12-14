@@ -14,7 +14,125 @@
   @include MOBILE-NAV;
 }
 
-
+// add property styling
+.add-property{
+  margin-top: 120px;
+  width: 90%;
+  margin-inline: auto;
+  h2{
+    font-size: $font3;
+  }
+  hr{
+    margin-block: 3rem;
+  }
+  h3{
+    font-size: $font4;
+    color: $maincolor;
+  }
+  .property-form{
+    margin-top: 2rem;
+    .gen-info{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .cta{
+        display: flex;
+        flex-direction: column;
+        label{
+          padding-inline: 7px;
+          font-size: $font6;
+          color: $maincolor;
+        }
+        input{
+          height: 40px;
+          outline: none;
+          border: 1px solid $maincolor;
+          padding: 5px;
+        }
+      }
+      .short-input{
+        display: flex;
+        gap: 1rem;
+        >div{
+          width: 25%;
+        }
+        .size{
+          position: relative;
+        }
+        span{
+          position: absolute;
+          right: 8%;
+          bottom: 8%;
+          z-index: 1;
+          color: $maincolor;
+        }
+        @include MEDIAQUERY(767px){
+          flex-direction: column;
+          >div{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .features-info{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    >div{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      input{
+        accent-color: $maincolor;
+      }
+    }
+    @include MEDIAQUERY(767px){
+      grid-template-columns: 1fr;
+    }
+  }
+  .media{
+    .images{
+      display: flex;
+      flex-direction: column;
+      label{
+        font-size: $font5;
+        font-weight: 500;
+        color: $maincolor;
+      }
+      label{
+        align-self: flex-start;
+        margin-bottom: 5px;
+        border: none;
+        background-color: $maincolor;
+        color: $white;
+        font-size: $font6;
+        padding: 8px 18px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      input[type="file"]{
+        display: none;
+      }
+    }
+  }
+  .btn{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    button{
+      border: none;
+      background-color: $maincolor;
+      color: $white;
+      font-size: $font6;
+      padding: 12px 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+}
 
 // footer
 
