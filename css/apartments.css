@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
 *,
 *::before,
 *::after {
@@ -11,6 +12,11 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   font-family: "poppins", sans-serif;
+  font-weight: 500;
+}
+
+h1, h2 {
+  font-weight: 600;
 }
 
 #laptop-nav {
@@ -296,7 +302,7 @@ body {
 .header {
   margin-top: 90px;
   height: 500px;
-  background-image: url(../img/5bdr3.webp);
+  background-image: url(https://propertyguru.com.ng/wp-content/uploads/2022/10/IMG-20220902-WA00102-525x328.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0 0 0 150px;
@@ -305,7 +311,7 @@ body {
 .header .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 0 0 0 150px;
   display: -webkit-box;
@@ -325,59 +331,73 @@ body {
 .header .overlay h1 {
   font-size: 3rem;
 }
-@media screen and (max-width: 767px) {
-  .header .overlay h1 {
-    font-size: 2rem;
-  }
-  .header .overlay p {
-    padding-inline: 10px;
-  }
-}
 .header .search {
+  width: 80%;
   position: absolute;
   bottom: -10%;
-  left: 25%;
+  left: 10%;
   background-color: white;
-  border-radius: 60px;
+  border-radius: 5rem;
   padding: 1.5rem 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 .header .search .apartment-type {
+  width: 40%;
   outline: none;
   border-color: #275d60;
-  border-radius: 20px 0 0 20px;
-  padding: 5px;
+  border-radius: 2rem 0 0 2rem;
+  padding: 1rem;
   font-size: 1rem;
 }
 .header .search .price {
+  width: 40%;
   outline: none;
   border-color: #275d60;
-  padding: 5px;
+  padding: 1rem;
   font-size: 1rem;
 }
 .header .search .searchbtn {
+  width: 20%;
   border: none;
   padding: 7px 12px;
   background-color: #275d60;
   color: white;
-  border-radius: 0 20px 20px 0;
-  font-size: 1rem;
+  border-radius: 0 2rem 2rem 0;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
+  .header {
+    border-radius: 0;
+  }
+  .header .overlay {
+    border-radius: 0;
+  }
+  .header .overlay h1 {
+    font-size: 2rem;
+  }
+  .header .overlay p {
+    padding-inline: 1rem;
+    text-align: center;
+  }
   .header .search {
-    right: 1%;
-    bottom: -5%;
-    padding: 1rem;
+    bottom: -10%;
+    padding: 0.9rem;
+    width: 90%;
+    left: 5%;
   }
   .header .search .apartment-type,
-  .header .search .price,
+  .header .search .price {
+    width: 35%;
+    padding: 10px;
+  }
   .header .search .searchbtn {
-    font-size: 15px;
-    width: 100px;
-    padding: 5px 2px;
+    width: 30%;
   }
 }
 
@@ -403,7 +423,7 @@ body {
   margin-top: 2rem;
 }
 .apartment-list .container .carousel2 .item {
-  height: 450px;
+  height: 470px;
   border: 1px solid #275d60;
   border-radius: 10px;
   overflow: hidden;
@@ -419,7 +439,7 @@ body {
      object-fit: cover;
 }
 .apartment-list .container .carousel2 .item .details {
-  height: 150px;
+  height: 170px;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,7 +457,15 @@ body {
   font-size: 1.2rem;
 }
 .apartment-list .container .carousel2 .item .details .location {
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+.apartment-list .container .carousel2 .item .details .priceWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .apartment-list .container .carousel2 .item .details .others {
   display: -webkit-box;
@@ -457,7 +485,7 @@ body {
   text-decoration: none;
   background-color: #275d60;
   color: white;
-  padding: 9px 18px;
+  padding: 8px 18px;
   border-radius: 5px;
   border: 1px solid #275d60;
   -webkit-transition: 500ms ease;

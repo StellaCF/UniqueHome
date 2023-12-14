@@ -84,21 +84,22 @@
         object-fit: cover;
       }
       .card{
+        height: 190px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1rem 1.5rem;
-        .location{
-          font-size: $font6;
-          i{
-            color: $maincolor;
-          }
-        }
-        .rating{
-          // display: flex;
+        padding: 1rem;
+        i{
           color: $maincolor;
-          i{
-            
+        }
+        .location{
+          font-size: 0.9rem;
+        }
+        .priceWrap{
+          display: flex;
+          justify-content: space-between;
+          p{
+            display: flex;
           }
         }
         .btn{

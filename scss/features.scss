@@ -35,10 +35,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    @include MEDIAQUERY(1024px){
-      grid-template-columns: 1fr;
-      row-gap: 2.5rem;
-    }
     .gda{
       width: 100% !important;
       height: 600px;
@@ -99,6 +95,7 @@
 
     // aside 
     .properties{
+      height: 650px;
       background-color: $white;
       box-shadow: 10px 10px 20px rgba($color: $maincolor, $alpha: 0.2);
       padding: 2rem;
@@ -160,6 +157,13 @@
         }
       }
     }
+    @include MEDIAQUERY(1024px){
+      grid-template-columns: 1fr;
+      row-gap: 2.5rem;
+      .properties{
+        // height: 650px;
+      }
+    }
   }
 }
 
@@ -182,5 +186,5 @@
 // footer
 
 .footer{
-  @include FOOTER;
+  @include FOOTER; 
 }

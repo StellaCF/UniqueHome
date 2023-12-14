@@ -177,7 +177,7 @@
           </ul>
           <hr>
           <div class="payRent">
-            <a href="payment.html">Proceed to rent</a>
+            <a href="checkout.html">Proceed to rent</a>
           </div>
         </aside>
       </section>
@@ -250,6 +250,27 @@
 
     <!-- swiper js file -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
 
     <script src="js/main.js"></script>
   </body>
