@@ -75,7 +75,6 @@
      h1 {
       font-size: 3rem;
       font-weight: 600;
-      font-family: sans-serif;
       text-align: center;
       align-items: center;
       color: white;
@@ -184,7 +183,6 @@
             color: white;
             font-size: 1.2rem;
             padding-bottom: 1rem;
-            font-family: serif;
             @include MEDIAQUERY(1024px, 768px) {
               font-size: 1.8rem;
             }
@@ -215,7 +213,6 @@
         h4 {
           font-size: 1.5rem;
           font-weight: 600;
-          font-family: sans-serif;
           padding-bottom: 1.5rem;
           color: black;
           @include MEDIAQUERY(767px) {
