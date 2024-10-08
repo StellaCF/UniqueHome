@@ -40,49 +40,27 @@ h1, h2 {
 }
 #laptop-nav .logo {
   text-decoration: none;
-  line-height: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-#laptop-nav .logo i {
-  color: #275d60;
-  font-size: 2.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 #laptop-nav .logo div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
+}
+#laptop-nav .logo div i {
+  color: #275d60;
+  font-size: 3rem;
+  position: absolute;
+  top: -40%;
+  left: -20%;
 }
 #laptop-nav .logo div span {
-  font-size: 1.5rem;
-  font-weight: 700;
   color: #275d60;
-  font-family: "poppins", sans-serif;
-}
-@media screen and (max-width: 767px) {
-  #laptop-nav .logo div span {
-    font-size: 1.2rem;
-  }
+  font-size: 2rem;
+  font-weight: 800;
 }
 #laptop-nav .logo div strong {
-  font-size: 1.2rem;
-  font-family: sans-serif;
   color: #275d60;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-@media screen and (max-width: 767px) {
-  #laptop-nav .logo div strong {
-    font-size: 1rem;
-  }
 }
 #laptop-nav .links {
   display: -webkit-box;
@@ -199,35 +177,24 @@ h1, h2 {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  line-height: 1.5em;
-}
-#mobile-nav header .logo i {
-  color: white;
-  font-size: 3rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 #mobile-nav header .logo div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
+}
+#mobile-nav header .logo div i {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: -40%;
+  left: -20%;
 }
 #mobile-nav header .logo div span {
-  font-size: 1.5rem;
-  font-family: "poppins", sans-serif;
   color: white;
+  font-size: 2rem;
+  font-weight: 800;
 }
 #mobile-nav header .logo div strong {
-  font-size: 1rem;
-  font-family: sans-serif;
   color: white;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 #mobile-nav header .menubar {
   font-size: 2rem;
